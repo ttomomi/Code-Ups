@@ -1,0 +1,23 @@
+@use "global" as *;
+.section-title {
+  position: relative;
+  color: $white;
+  font-weight: $regular;
+  font-size: rem(20);
+  text-align: center;
+  padding-top: 50px;
+	padding-bottom: 50px;
+}
+.section-title span {
+  position: absolute;
+  display: inline-block;
+  font-size: rem(50);
+  font-family: $second-font-family;
+  font-weight: $regular;
+  color: $yellow;
+  opacity: 0.2;
+  line-height: 1.437;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
