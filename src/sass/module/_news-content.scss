@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.news-content {
+  margin-top: rem(85);
+}
+.news-content +
+.news-content
+{
+  margin-top: rem(32);
+}
+.news-content__date,
+.news-content__category {
+  display: inline-block;
+  line-height: 1;
+}
+.news-content__date,
+.news-content__category,
+.news-content__text {
+  color: $white;
+}
+.news-content__date,
+.news-content__text {
+  font-size: rem(16);
+  font-weight: $regular;
+}
+.news-content__category {
+  font-size: rem(14);
+  font-weight: $regular;
+  margin-left: rem(32);
+  padding: rem(8) rem(21);
+  border: 1px solid $white;
+}
+.news-content__block {
+  margin-top: rem(16);
+}

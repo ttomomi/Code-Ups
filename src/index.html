@@ -29,11 +29,28 @@
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    <header>
-
-    </header>
     <main>
-      <img src="./assets/images/common/blog-card1" alt="">
+
+      <header class="header top-header">
+        <div class="header__inner">
+          <h1 class="header__item logo">
+            <a href="#" class="logo__link">
+              <img src="../assets/images/common/logo.png" alt="コードアップスロゴ">
+            </a>
+          </h1>
+          <button class="p-header__drawer c-hamburger js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+    
+    
+      <!-- ul.global-nav__items>li.global-nav__item*5>a -->
+    
+    </header>
+    
+
 
       <!-- ボタン -->
       <a href="" class="button">詳しく見る</a>
@@ -44,72 +61,106 @@
       <!-- //セクションタイトル -->
 
       <!-- カード -->
-    <div class="card-list">
-      <a href="#" class="blog-card card-list__item">
-        <figure class="blog-card__img">
-          <img src="./images/blog-card1.jpg" alt="ブログカード1">
-        </figure>
-        <div class="blog-card__body">
-          <h3 class="blog-card__title">
-            タイトルが入ります。タイトルが入ります。
-          </h3>
-          <p class="blog-card__text">
-            説明文が入ります。説明文が入ります。説明文が入ります。
-          </p>
-          <div class="blog-card__info">
-            <div class="blog-card__category">
-              カテゴリ
+      <div class="blog-cards">
+        <article class="blog-cards__item card-list">
+          <a href="#" class="blog-card blog-list__item">
+            <figure class="blog-card__img">
+              <img src="../assets/images/common/blog-card1.jpg" alt="ブログカード1">
+            </figure>
+            <div class="blog-card__body">
+              <h3 class="blog-card__title  blog-card__hover">
+                タイトルが入ります。タイトルが入ります。
+              </h3>
+              <p class="blog-card__text  blog-card__hover">
+                説明文が入ります。説明文が入ります。説明文が入ります。
+              </p>
+              <div class="blog-card__info">
+                <div class="blog-card__category">
+                  カテゴリ
+                </div>
+                <time class="blog-card__date  blog-card__hover" datetime="2021-07-20">
+                  2021.07.20
+                </time>
+              </div>
             </div>
-            <time class="blog-card__date" datetime="2021-07-20">
-              2021.07.20
-            </time>
+          </a>
+        </article>
+        <article class="blog-cards__item card-list">
+          <a href="#" class="blog-card blog-list__item">
+            <figure class="blog-card__img">
+              <img src="../assets/images/common/blog-card2.jpg" alt="ブログカード2">
+            </figure>
+            <div class="blog-card__body">
+              <h3 class="blog-card__title  blog-card__hover">
+                タイトルが入ります。タイトルが入ります。
+              </h3>
+              <p class="blog-card__text  blog-card__hover">
+                説明文が入ります。説明文が入ります。説明文が入ります。
+              </p>
+              <div class="blog-card__info">
+                <div class="blog-card__category">
+                  カテゴリ
+                </div>
+                <time class="blog-card__date  blog-card__hover" datetime="2021-07-20">
+                  2021.07.20
+                </time>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="blog-cards__item card-list">
+          <a href="#" class="blog-card blog-list__item">
+            <figure class="blog-card__img">
+              <img src="../assets/images/common/blog-card3.jpg" alt="ブログカード2">
+            </figure>
+            <div class="blog-card__body">
+              <h3 class="blog-card__title blog-card__hover">
+                タイトルが入ります。タイトルが入ります。
+              </h3>
+              <p class="blog-card__text blog-card__hover">
+                説明文が入ります。説明文が入ります。説明文が入ります。
+              </p>
+              <div class="blog-card__info">
+                <div class="blog-card__category">
+                  カテゴリ
+                </div>
+                <time class="blog-card__date blog-card__hover" datetime="2021-07-20">
+                  2021.07.20
+                </time>
+              </div>
+            </div>
+          </a>
+        </article>
+        
+      </div>
+        <!-- //カード -->
+
+      <!-- 記事 -->
+      <article class="news top-news">
+        <div class="news__inner">
+          <div class="news-contents">
+            <article class="news-contents__item news-content">
+              <div class="news-content_info">
+                <time class="news-content__date" datetime="2020-07-20">2020.07.20</time>
+                <span class="news-content__category">お知らせ</span>
+                <div class="news-content__block">
+                  <a href="#" class="news-content__text">
+                  記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
+                  </a>
+                </div>
+              </div>
+              
+            </article>
+            <div class="news-contents__btn">
+              <a href="" class="button">すべて見る</a>
+            </div>
           </div>
         </div>
-      </a>
-      <a href="#" class="blog-card card-list__item">
-        <figure class="blog-card__img">
-          <img src="./images/blog-card2.jpg" alt="ブログカード2">
-        </figure>
-        <div class="blog-card__body">
-          <h3 class="blog-card__title">
-            タイトルが入ります。タイトルが入ります。
-          </h3>
-          <p class="blog-card__text">
-            説明文が入ります。説明文が入ります。説明文が入ります。
-          </p>
-          <div class="blog-card__info">
-            <div class="blog-card__category">
-              カテゴリ
-            </div>
-            <time class="blog-card__date" datetime="2021-07-20">
-              2021.07.20
-            </time>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="blog-card card-list__item">
-        <figure class="blog-card__img">
-          <img src="./images/blog-card3.jpg" alt="ブログカード3">
-        </figure>
-        <div class="blog-card__body">
-          <h3 class="blog-card__title">
-            タイトルが入ります。タイトルが入ります。
-          </h3>
-          <p class="blog-card__text">
-            説明文が入ります。説明文が入ります。説明文が入ります。
-          </p>
-          <div class="blog-card__info">
-            <div class="blog-card__category">
-              カテゴリ
-            </div>
-            <time class="blog-card__date" datetime="2021-07-20">
-              2021.07.20
-            </time>
-          </div>
-        </div>
-      </a>
-    </div>
-      <!-- //カード -->
+      </article>
+      <!-- //記事 -->
+
+
+
     </main>
     <footer>
 

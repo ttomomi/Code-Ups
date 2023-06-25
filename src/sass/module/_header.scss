@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  opacity: 0.5;
+  height: rem(50);
+  z-index: 10;
+}
+.logo {
+  width: rem(70);
+}
