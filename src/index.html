@@ -29,27 +29,83 @@
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    <main>
 
       <header class="header top-header">
         <div class="header__inner">
-          <h1 class="header__item logo">
-            <a href="#" class="logo__link">
+          <h1 class="header__logo">
+            <a href="#" class="header__link">
               <img src="../assets/images/common/logo.png" alt="コードアップスロゴ">
             </a>
           </h1>
-          <button class="p-header__drawer c-hamburger js-hamburger">
+          <button class="header__drawer hamburger js-hamburger">
             <span></span>
             <span></span>
             <span></span>
           </button>
+          <div class="sp-nav js-drawer-menu">
+            <ul class="sp-nav__items">
+              <li class="sp-nav__item"><a href="">トップ</a></li>
+              <li class="sp-nav__item"><a href="">お知らせ</a></li>
+              <li class="sp-nav__item"><a href="">事業内容</a></li>
+              <li class="sp-nav__item"><a href="">制作実績</a></li>
+              <li class="sp-nav__item"><a href="">企業概要</a></li>
+              <li class="sp-nav__item"><a href="">ブログ</a></li>
+              <li class="sp-nav__item"><a href="">お問い合わせ</a></li>
+            </ul>
+          </div>
+            <div class="pc-nav">
+              <ul class="pc-nav__items">
+                <li class="sp-nav__item"><a href="">トップ</a></li>
+                <li class="sp-nav__item"><a href="">お知らせ</a></li>
+                <li class="sp-nav__item"><a href="">事業内容</a></li>
+                <li class="sp-nav__item"><a href="">制作実績</a></li>
+                <li class="sp-nav__item"><a href="">企業概要</a></li>
+                <li class="sp-nav__item"><a href="">ブログ</a></li>
+                <li class="sp-nav__item"><a href="">お問い合わせ</a></li>
+              </ul>
+            </div>
         </div>
-    
-    
-      <!-- ul.global-nav__items>li.global-nav__item*5>a -->
-    
-    </header>
-    
+      </header>
+
+
+    <main>
+      <section class="mv top-mv">
+        <div class="mv__inner">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-img">
+                  <img
+                    src="../assets/images/common/mv-sp1.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-img">
+                  <img
+                    src="../assets/images/common/mv-sp2.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-img">
+                  <img
+                    src="../assets/images/common/mv-sp3.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mv__header">
+              <h2 class="mv__title">Wメインタイトルが入ります</h2>
+              <p class="mv__subtitle">サブタイトルが入ります</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
 
 
       <!-- ボタン -->
