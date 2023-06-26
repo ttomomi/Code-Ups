@@ -14,6 +14,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  
+});
+
+
   // swiper
   const swiper = new Swiper(".swiper", {
     loop: true,
@@ -29,5 +33,3 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       clickable: true,
     },
   });
-
-});

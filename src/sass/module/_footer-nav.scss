@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.footer-nav {
+  text-align: center;
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer-nav__items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: rem(4);
+  @include mq(md) {
+    flex-direction: inherit;
+    margin-top: 0;
+  }
+}
+.footer-nav__item a {
+  display: inline-block;
+  width: 100%;
+  color: $white;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.448125;
+  letter-spacing: 0.02em;
+  padding: rem(4) 0;
+  @include mq(md) {
+    padding: 0 rem(16);
+    line-height: 2.1875;
+  }
+}
+.footer-nav__item a span {
+  position: relative;
+}
+.footer-nav__item a span::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: rem(1);
+  background: $yellow;
+  bottom: -1px;       /*アンダーラインが位置する、各リストの下端からの高さ　ヘッダーの下端に合わせています*/
+  visibility: hidden; /*ホバー前に、アンダーラインを可視化しない*/
+  }
+.footer-nav__item a:hover span::after {
+  visibility: visible;
+}
+.footer-nav__item--sp {
+  @include mq(md) {
+    display: none;
+  }
+}

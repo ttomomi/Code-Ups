@@ -11,6 +11,9 @@
   height: 100vh;
   z-index: 8888;
   transition: ease .3s;
+  @include mq(md) {
+    display: none;
+  }
 }
 .sp-nav.is-open {
   transform: translateX(0);
@@ -20,6 +23,12 @@
   padding-bottom: rem(20);
   height: 100vh;
   overflow: scroll;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.sp-nav__item {
+  width: 100vw;
 }
 .sp-nav__item a {
   display: block;

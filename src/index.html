@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <!-- JavaScript -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
@@ -32,9 +33,9 @@
 
       <header class="header top-header">
         <div class="header__inner">
-          <h1 class="header__logo">
-            <a href="#" class="header__link">
-              <img src="../assets/images/common/logo.png" alt="コードアップスロゴ">
+          <h1 class="header__logo logo">
+            <a href="#" class="logo__link">
+              <img src="../assets/images/common/logo.png" alt="code upsのロゴ">
             </a>
           </h1>
           <button class="header__drawer hamburger js-hamburger">
@@ -55,13 +56,13 @@
           </div>
             <div class="pc-nav">
               <ul class="pc-nav__items">
-                <li class="sp-nav__item"><a href="">トップ</a></li>
-                <li class="sp-nav__item"><a href="">お知らせ</a></li>
-                <li class="sp-nav__item"><a href="">事業内容</a></li>
-                <li class="sp-nav__item"><a href="">制作実績</a></li>
-                <li class="sp-nav__item"><a href="">企業概要</a></li>
-                <li class="sp-nav__item"><a href="">ブログ</a></li>
-                <li class="sp-nav__item"><a href="">お問い合わせ</a></li>
+                <li class="pc-nav__item"><a href="">トップ</a></li>
+                <li class="pc-nav__item"><a href="">お知らせ</a></li>
+                <li class="pc-nav__item"><a href="">事業内容</a></li>
+                <li class="pc-nav__item"><a href="">制作実績</a></li>
+                <li class="pc-nav__item"><a href="">企業概要</a></li>
+                <li class="pc-nav__item"><a href="">ブログ</a></li>
+                <li class="pc-nav__item pc-nav__item--white"><a href="">お問い合わせ</a></li>
               </ul>
             </div>
         </div>
@@ -69,43 +70,151 @@
 
 
     <main>
+      <!-- メインビジュアル -->
       <section class="mv top-mv">
         <div class="mv__inner">
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="swiper-img">
-                  <img
-                    src="../assets/images/common/mv-sp1.jpg"
-                    alt=""
-                  />
+                  <picture>
+                    <source
+                      srcset="../assets/images/common/mv-pc1.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      src="../assets/images/common/mv-sp1.jpg"
+                      alt=""
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-img">
+                  <picture>
+                  <source
+                    srcset="../assets/images/common/mv-pc2.jpg"
+                    media="(min-width: 768px)"
+                  />
                   <img
                     src="../assets/images/common/mv-sp2.jpg"
                     alt=""
                   />
+                </picture>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="swiper-img">
+                  <picture>
+                  <source
+                    srcset="../assets/images/common/mv-pc3.jpg"
+                    media="(min-width: 768px)"
+                  />
                   <img
                     src="../assets/images/common/mv-sp3.jpg"
                     alt=""
                   />
+                </picture>
                 </div>
               </div>
             </div>
-            <div class="mv__header">
-              <h2 class="mv__title">Wメインタイトルが入ります</h2>
-              <p class="mv__subtitle">サブタイトルが入ります</p>
-            </div>
           </div>
-          
+          <div class="mv__header">
+            <h2 class="mv__title">メインタイトルが入ります</h2>
+            <p class="mv__subtitle">サブタイトルが入ります</p>
+          </div>
         </div>
       </section>
+      <!-- ./メインビジュアル -->
+
+      <!-- news -->
+      <article class="news top-news">
+        <div class="news__inner section-inner">
+          <div class="news-contents">
+            <article class="news-contents__item news-content">
+              <div class="news-content__info">
+                <time class="news-content__date" datetime="2020-07-20">2020.07.20</time>
+                <span class="news-content__category">お知らせ</span>
+                <div class="news-content__block">
+                  <a href="#" class="news-content__text">
+                  記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
+                  </a>
+                </div>
+              </div>
+              
+            </article>
+            <div class="news-contents__btn">
+              <a href="">すべて見る</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- /.news -->
+
+      <!-- content -->
+      <section class="content top-content">
+        <div class="content-inner">
+          <h2 class="section-title">事業内容<span>Content</span></h2>
+          <div class="content-block">
+            <a href="" class="content-block__item">
+              <picture>
+                <source
+                  srcset="../assets/images/common/content-img1.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="../assets/images/common/content-img-sp1.jpg"
+                  alt=""
+                />
+              </picture>
+              <p class="content-block__text">経営理念ページへ</p>
+            </a>
+            <a href="" class="content-block__item">
+              <picture>
+                <source
+                  srcset="../assets/images/common/content-img2.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="../assets/images/common/content-img-sp2.jpg"
+                  alt=""
+                />
+              </picture>
+              <p class="content-block__text">理念1へ</p>
+            </a>
+            <a href="" class="content-block__item">
+              <picture>
+                <source
+                  srcset="../assets/images/common/content-img3.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="../assets/images/common/content-img-sp3.jpg"
+                  alt=""
+                />
+              </picture>
+              <p class="content-block__text">理念2へ</p>
+            </a>
+            <a href="" class="content-block__item">
+              <picture>
+                <source
+                  srcset="../assets/images/common/content-img4.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="../assets/images/common/content-img-sp4.jpg"
+                  alt=""
+                />
+              </picture>
+              <p class="content-block__text">理念3へ</p>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ./content -->
+
 
 
       <!-- ボタン -->
@@ -192,34 +301,33 @@
         <!-- //カード -->
 
       <!-- 記事 -->
-      <article class="news top-news">
-        <div class="news__inner">
-          <div class="news-contents">
-            <article class="news-contents__item news-content">
-              <div class="news-content_info">
-                <time class="news-content__date" datetime="2020-07-20">2020.07.20</time>
-                <span class="news-content__category">お知らせ</span>
-                <div class="news-content__block">
-                  <a href="#" class="news-content__text">
-                  記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
-                  </a>
-                </div>
-              </div>
-              
-            </article>
-            <div class="news-contents__btn">
-              <a href="" class="button">すべて見る</a>
-            </div>
-          </div>
-        </div>
-      </article>
+      
       <!-- //記事 -->
 
 
 
     </main>
-    <footer>
-
+    <footer class="footer top-footer">
+      <div class="footer__inner">
+        <nav class="footer__nav footer-nav">
+          <div class="footer__logo">
+            <img src="../assets/images/common/logo.png" alt="code upsのロゴ">
+          </div>
+          <ul class="footer-nav__items">
+            <li class="footer-nav__item footer-nav__item--sp"><a href="">トップ</a></li>
+            <li class="footer-nav__item"><a href=""><span>お知らせ</span></a></li>
+            <li class="footer-nav__item"><a href=""><span>事業内容</span></a></li>
+            <li class="footer-nav__item"><a href=""><span>制作実績</span></a></li>
+            <li class="footer-nav__item"><a href=""><span>企業概要</span></a></li>
+            <li class="footer-nav__item"><a href=""><span>自社メディア</span></a></li>
+            <li class="footer-nav__item"><a href=""><span>お問い合わせ</span></a></li>
+          </ul>
+        </nav>
+        <div class="footer__copyright">
+          <small>&copy;2021 CodeUps Inc.</small>
+        </div>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -2,4 +2,36 @@
 
 .pc-nav {
   display: none;
+  @include mq(md) {
+    display: block;
+    height: inherit;
+}
+}
+.pc-nav__items {
+  @include mq(md) {
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+}
+.pc-nav__item {
+  @include mq(md) {
+    height: inherit;
+  }
+}
+.pc-nav__item a {
+  @include mq(md) {
+    height: inherit;
+    display: grid;
+    place-items: center;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $regular;
+    line-height: 1;
+    padding: 0 rem(16);
+}
+}
+.pc-nav__item.pc-nav__item--white a {
+  background-color: $white;
+  color: $black;
 }

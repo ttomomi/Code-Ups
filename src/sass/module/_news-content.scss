@@ -1,7 +1,10 @@
 @use "global" as *;
 
-.news-content {
-  margin-top: rem(85);
+.news-content__info {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
 }
 .news-content +
 .news-content
@@ -26,10 +29,20 @@
 .news-content__category {
   font-size: rem(14);
   font-weight: $regular;
+  line-height: 1;
   margin-left: rem(32);
   padding: rem(8) rem(21);
   border: 1px solid $white;
+  flex-shrink: 0;
 }
 .news-content__block {
   margin-top: rem(16);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+.news-content__text {
+  @include mq(md) {
+    margin-left: rem(61);
+  }
 }

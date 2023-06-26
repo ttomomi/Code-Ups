@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.footer__logo {
+  width: rem(70);
+  margin: auto;
+  @include mq(md) {
+    margin: 0;
+  }
+}
+.footer__inner {
+  padding: 0 $padding-sp;
+  margin: auto;
+  max-width: rem(1216);
+  width: 100%;
+  @include mq(md) {
+    padding: 0 $padding-pc;
+  }
+}
+.footer__copyright {
+  text-align: center;
+  margin-top: rem(32);
+  color: $white;
+  font-size: rem(10);
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0.012em;
+  @include mq(md) {
+    font-size: rem(15);
+    margin-top: rem(75);
+  }
+}

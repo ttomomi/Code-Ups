@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.section-inner {
+  padding: 0 $padding-sp;
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    padding: 0 $padding-pc;
+    max-width: $inner;
+  }
+}

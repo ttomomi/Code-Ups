@@ -4,18 +4,19 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #111;
-  opacity: 0.5;
+  background-color: rgba(17, 17, 17, 0.5);
   height: rem(50);
   position: fixed;
-}
-.header__logo {
-  width: rem(70);
+  z-index: 10;
 }
 .header__inner {
   height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 rem(22);
+  padding-left: rem(22);
+  @include mq(md) {
+    padding-left: rem(32);
+    padding-right: 0;
+  }
 }
