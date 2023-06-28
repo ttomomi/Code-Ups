@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.arrow {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+  padding: rem(20);
+  position: fixed;
+  right: rem(31);
+  bottom: rem(32);
+  z-index: 20;
+}
+.arrow::before,
+.arrow::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+
+.sample5-5::before { 
+  width: rem(45);
+  height: rem(45);
+	background: $white;
+}
+.sample5-5::after {
+  width: rem(24);
+  height: rem(24);
+	border-top: rem(2) solid $black;
+	border-right: rem(2) solid $black;
+  margin-top: rem(16.5);
+  left: rem(10.5);
+  transform: rotate(-45deg);
+}
+
+// ホバー時色変化
+.sample5-5:hover::before {
+  background: $black;
+}
+.sample5-5:hover::after {
+  border-top: rem(2) solid $white;
+	border-right: rem(2) solid $white;
+}

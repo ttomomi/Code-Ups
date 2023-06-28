@@ -14,12 +14,42 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  // スクロールすると背景色変更
+  $(window).on("scroll", function () {
+    const sliderHeight = $(".mv").height();
+    if (sliderHeight - 30 < $(this).scrollTop()) {
+      $(".js-header").addClass("headerColorScroll");
+    } else {
+      $(".js-header").removeClass("headerColorScroll");
+    }
+});
+
+  // ページトップボタン
+  const pageTop = $("#page-top");
+  pageTop.hide();
+  $(window).on("scroll", function () {
+    const sliderHeight = $(".mv").height();
+    if (sliderHeight - 30 < $(this).scrollTop()) { 
+      pageTop.fadeIn(); 
+    } else {
+      pageTop.fadeOut(); 
+    }
+  });
+  pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500 
+    );
+    return false;
+  });
   
 });
 
 
-  // swiper
-  const swiper = new Swiper(".swiper", {
+  // swiper MV
+  var swiper1 = new Swiper(".js-mv-swiper", {
     loop: true,
     effect: "fade", // フェード切り替え
     // 自動再生
@@ -33,3 +63,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       clickable: true,
     },
   });
+
+  // swiper Works
+  var swiper2 = new Swiper(".js-works-swiper", {
+    pagination: {
+      el: ".js-works-pagination",
+    },
+    loop: true,
+    clickable: true,
+    autoplay: {
+          delay: 4000, // 4秒後に次のスライドへ
+          disableOnInteraction: false, // ユーザーが操作しても自動再生を継続
+        },
+  });
+
+  

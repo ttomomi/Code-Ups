@@ -8,13 +8,20 @@
     transform: scale(1.15);
   }
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-img {
+  width: 100%;
+  height: 100%;
+}
 .swiper-slide-active .swiper-img,
 .swiper-slide-duplicate-active .swiper-img,
 .swiper-slide-prev .swiper-img {
   animation: zoomUp 12s linear 0s normal both;
 }
 .swiper-slide img {
-  height: 100vh;
-  width: 100%;
-  
+  height: 100%;
+  object-fit: cover;
 }

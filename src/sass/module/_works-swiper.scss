@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom,rem(-23));
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #F9F871;
+}
+.works-swiper__img {
+  object-fit: cover;
+  aspect-ratio: 375 / 261;
+  @include mq(md) {
+    aspect-ratio: 557 /389;
+  }
+}

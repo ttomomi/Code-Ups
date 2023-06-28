@@ -3,14 +3,18 @@
 .content-block {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: rem(48);
 }
 .content-block__item {
   position: relative;
   width: 50%;
+  aspect-ratio: 188 / 168;
   object-fit: cover;
   @include mq(md) {
     width: 25%;
+    aspect-ratio: 320 / 320;
   }
 }
 .content-block__item picture {
@@ -37,31 +41,6 @@
     list-style: 0.05em;
   }
 }
-// }
-// .content-block__item--1 {
-//   background-image: url(../images/common/content-img-sp1.jpg);
-//   @include mq(md) {
-//     background-image: url(../images/common/content-img1.jpg);
-//   }
-// }
-// .content-block__item--2 {
-//   background-image: url(../images/common/content-img-sp2.jpg);
-//   @include mq(md) {
-//     background-image: url(../images/common/content-img2.jpg);
-//   }
-// }
-// .content-block__item--3 {
-//   background-image: url(../images/common/content-img-sp3.jpg);
-//   @include mq(md) {
-//     background-image: url(../images/common/content-img3.jpg);
-//   }
-// }
-// .content-block__item--4 {
-//   background-image: url(../images/common/content-img-sp4.jpg);
-//   @include mq(md) {
-//     background-image: url(../images/common/content-img4.jpg);
-//   }
-// }
 .content-block__item::before {
   content: '';
   position: absolute;

@@ -20,3 +20,12 @@
     padding-right: 0;
   }
 }
+/* スクロールしたらヘッダーメニューの背景色ー変更 */
+.header.headerColorScroll {
+  background-color: #111;
+  transition: color 0.4s ease-out;
+}
+.pc-nav__item--white.headerColorScroll {
+  background-color: $black;
+  transition: color 0.4s ease-out;
+}

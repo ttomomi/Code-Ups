@@ -1,4 +1,5 @@
 @use "global" as *;
+
 .section-title {
   position: relative;
   color: $white;
@@ -8,7 +9,8 @@
   padding-top: 50px;
 	padding-bottom: 50px;
 }
-.section-title span {
+.section-title__bg-right,
+.section-title__bg-left {
   position: absolute;
   display: inline-block;
   font-size: rem(50);
@@ -20,4 +22,16 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: -1;
+  @include mq(md) {
+    font-size: rem(110);
+    line-height: 1.437;
+    width: 100%;
+  }
+}
+.section-title__bg-right {
+  text-align: right;
+}
+.section-title__bg-left {
+  text-align: left;
 }

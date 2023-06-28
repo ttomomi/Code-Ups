@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.top-contact {
+  padding-top: rem(19);
+  padding-bottom: rem(64);
+  margin-top: rem(120);
+  background-color: $black;
+}

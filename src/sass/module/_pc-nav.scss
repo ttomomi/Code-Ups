@@ -35,3 +35,34 @@
   background-color: $white;
   color: $black;
 }
+// ホバー時アンダーライン
+.pc-nav__item a span {
+  @include mq(md) {
+  position: relative;
+}
+}
+.pc-nav__item  a span::after {
+  @include mq(md) {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: rem(1);
+  background: #FFEA2E;
+  bottom: rem(-3);       /*アンダーラインが位置する、各リストの下端からの高さ　ヘッダーの下端に合わせています*/
+  visibility: hidden; /*ホバー前に、アンダーラインを可視化しない*/
+  }
+}
+.pc-nav__item  a:hover span::after {
+  @include mq(md) {
+  visibility: visible;
+  }
+}
+.pc-nav__item.pc-nav__item--white a {
+  transition: 0.2s;
+}
+.pc-nav__item.pc-nav__item--white a:hover {
+  background-color: $black;
+  color: $white;
+  transition: 0.2s;
+}

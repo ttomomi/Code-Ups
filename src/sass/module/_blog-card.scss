@@ -1,4 +1,7 @@
 @use "global" as *;
+.blog-card {
+  position: relative;
+}
 .blog-card__title,
 .blog-card__text,
 .blog-card__category,
@@ -37,7 +40,7 @@ line-height: 1.944444;
 .blog-card__info {
   padding-top: rem(4);
 }
-.blog-card {
+.blog-card__list {
   display: block;
   background-color: $white;
   margin-top: rem(24);
@@ -58,7 +61,7 @@ line-height: 1.944444;
 }
 
 // ホバー時
-.blog-card:hover {
+.blog-card__list:hover {
   background-color: $black;
   color: $white;
   transition: all 0.3s ease 0s;
@@ -67,4 +70,23 @@ line-height: 1.944444;
 .blog-card__hover {
   color: $white;
   transition: all 0.3s ease 0s;
+}
+
+// newマークの表示
+.blog-card:first-child::before {
+  position: absolute;
+  z-index: 1;
+  content: 'New';
+  color: $black;
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: rem(60);
+  letter-spacing: 0.02em;
+  background-color: #FFBA6A;
+  border-radius: 50%;
+  width: rem(60);
+  height: rem(60);
+  text-align: center;
+  top: rem(-20);
+  left: rem(-15);
 }

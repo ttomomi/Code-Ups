@@ -1,7 +1,12 @@
 @use "global" as *;
 
-.mv__inner {
+.mv {
+  height: 100vh;
   position: relative;
+}
+.mv__inner {
+  width: 100%;
+  height: 100%;
 }
 .mv__header {
   position: absolute;
