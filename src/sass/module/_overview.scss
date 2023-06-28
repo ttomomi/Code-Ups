@@ -19,6 +19,7 @@
   bottom: rem(-8);
   object-fit: cover;
   aspect-ratio: 375 / 261;
+  margin-top: rem(50);
   @include mq(md) {
   max-width: rem(557);
   width: 100%;
@@ -55,7 +56,7 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: 1.448125;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.13em;
   margin-top: rem(24);
   @include mq(md) {
     line-height: 2.1875;
@@ -63,7 +64,7 @@
   }
 }
 .overview__content-btn {
-  margin-top: rem(16);
+  margin-top: rem(24);
   padding-bottom: rem(21);
   text-align: center;
   @include mq(md) {

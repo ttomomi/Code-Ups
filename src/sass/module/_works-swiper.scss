@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: var(--swiper-pagination-bottom,rem(-23));
+  bottom: var(--swiper-pagination-bottom,rem(-20));
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background-color: #F9F871;

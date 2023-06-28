@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .blog-cards {
+  margin-top: rem(68);
   @include mq(md) {
     display: flex;
     flex-wrap: wrap;
