@@ -25,11 +25,18 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: 1.448125;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
+  text-indent: 0.05em;
   padding: rem(4) 0;
   @include mq(md) {
     padding: 0 rem(16);
     line-height: 2.1875;
+    letter-spacing: 0.1em;
+  }
+}
+.footer-nav__item:last-child a {
+  @include mq(md) {
+    padding-right: 0;
   }
 }
 .footer-nav__item a span {
@@ -49,7 +56,14 @@
   visibility: visible;
 }
 .footer-nav__item--sp {
+  display: block;
   @include mq(md) {
     display: none;
+  }
+}
+.footer-nav__item--pc {
+  display: none;
+  @include mq(md) {
+    display: block;
   }
 }

@@ -11,24 +11,21 @@
   line-height: 1.448125;
   text-align: left;
   display: inline-block;
-  margin-top: rem(18);
+  margin-top: rem(19);
+  @include mq(md) {
+    margin-top: rem(23);
+    text-indent: 0.13em;
+  }
 }
 .contact__btn {
-  margin-top: rem(46);
+  margin-top: rem(61);
   text-align: center;
 }
 
-// 黄色い線背景
-.content {
-  position: relative;
-}
-.content::before {
-  content: '';
-  width: 94.6875%;
-  height: rem(1212);
-  position: absolute;
-  top: rem(-107);
-  left: 0;
-  background-image: linear-gradient(to right top,transparent 49.9%, $yellow 50%, $yellow calc(50.1% + 1px), transparent calc(50.3% + 1px));
-  z-index: -10;
+// ボタンテキスト
+.button.contact__btn--text {
+  @include mq(md) {
+  font-size: rem(20);
+  padding: rem(19) 0;
+ }
 }

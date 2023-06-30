@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.section-inner.news__inner {
+  @include mq(md) {
+  max-width: rem(1092);
+}
+}

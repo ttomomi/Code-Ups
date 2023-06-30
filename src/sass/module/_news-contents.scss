@@ -3,7 +3,7 @@
 .news-contents {
   @include mq(md) {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 }
 .news-contents__btn {
@@ -24,18 +24,23 @@
   padding: rem(14) 0;
   line-height: 1;
   letter-spacing: 0.1em;
+  text-indent: 0.1em;
   text-decoration: none;
   border: 1px solid $white;
   transition: 0.3s ease-in-out;
   z-index: 1;
   @include mq(md) {
-    width: rem(134);
-    padding: rem(3) rem(26);
+    width: auto;
+    padding: rem(7) rem(22);
     font-size: rem(16);
     font-weight: $normal;
     background-color: $white;
     color: #000;
-    margin-left: rem(48);
+    margin-left: rem(49);
+    margin-top: rem(4);
+    letter-spacing: 0.04em;
+    text-indent: 0.36em;flex-shrink: 0;
+    white-space: nowrap;
     }
 }
 .news-contents__btn a::before {

@@ -8,8 +8,7 @@
   @include mq(md) {
     margin-left: 0;
     display: flex;
-    background: linear-gradient(90deg, transparent 0%, transparent 29%, $black 29%, $black 100%);
-    align-items: center;
+    background: linear-gradient(90deg, transparent 0%, transparent 25%, $black 25%, $black 100%);
     padding-top: rem(80);
     padding-bottom: rem(80);
     padding-right: rem(91);
@@ -18,10 +17,13 @@
 .works__img {
   position: relative;
   bottom: rem(-8);
+  object-fit: cover;
+  aspect-ratio: 375 / 261;
   @include mq(md) {
   max-width: rem(557);
   width: 100%;
   bottom: 0;
+  aspect-ratio: 557 /389;
   }
 }
 .works__content {
@@ -38,32 +40,38 @@
   font-size: rem(20);
   font-weight: $regular;
   line-height: 1.448;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
+  text-indent: 0.9em;
   padding-top: rem(32);
   text-align: center;
   @include mq(md) {
     font-size: rem(25);
     letter-spacing: 0.05em;
     text-align: left;
+    text-indent: inherit;
+    padding-top: rem(28);
+    letter-spacing: 0.02em;
   }
 }
 .works__content-text {
   color: $white;
   font-size: rem(16);
   font-weight: $regular;
-  line-height: 1.448125;
+  line-height: 1.43;
   letter-spacing: 0.13em;
   margin-top: rem(24);
   @include mq(md) {
     line-height: 2.1875;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
+    margin-top: rem(38);
   }
 }
 .works__content-btn {
-  margin-top: rem(24);
+  margin-top: rem(26);
   padding-bottom: rem(21);
   text-align: center;
   @include mq(md) {
     text-align: left;
+    margin-top: rem(48);
   }
 }

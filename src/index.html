@@ -18,8 +18,6 @@
     <meta property="og:description" content="" />
     <!-- ファビコン -->
     <link rel="”icon”" href="" />
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <!-- css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -48,17 +46,16 @@
           <div class="sp-nav js-drawer-menu">
             <ul class="sp-nav__items">
               <li class="sp-nav__item"><a href="#"><span>トップ</span></a></li>
+              <li class="sp-nav__item"><a href="#"><span>お知らせ</span></a></li>
               <li class="sp-nav__item"><a href="#"><span>事業内容</span></a></li>
               <li class="sp-nav__item"><a href="#"><span>制作実績</span></a></li>
-              <li class="sp-nav__item"><a href="#"><span>お知らせ</span></a></li>
-              <li class="sp-nav__item"><a href=#"><span>企業概要</span></a></li>
+              <li class="sp-nav__item"><a href="#"><span>企業概要</span></a></li>
               <li class="sp-nav__item"><a href="#"><span>ブログ</span></a></li>
               <li class="sp-nav__item"><a href="#"><span>お問い合わせ</span></a></li>
             </ul>
           </div>
             <div class="pc-nav">
               <ul class="pc-nav__items">
-                <li class="pc-nav__item"><a href="#"><span>トップ</span></a></li>
                 <li class="pc-nav__item"><a href="#"><span>お知らせ</span></a></li>
                 <li class="pc-nav__item"><a href="#"><span>事業内容</span></a></li>
                 <li class="pc-nav__item"><a href="#"><span>制作実績</span></a></li>
@@ -155,7 +152,7 @@
 
       <!-- content -->
       <section class="content top-content">
-        <div class="content-inner section-inner">
+        <div class="content__inner section-inner">
           <h2 class="section-title">事業内容<span class="section-title__bg-left">Content</span></h2>
           <div class="content-block">
             <a href="" class="content-block__item">
@@ -286,7 +283,7 @@
       <!-- Overview -->
       <section class="overview top-works">
         <div class="overview__inner section-inner">
-          <h2 class="section-title">企業概要<span class="section-title__bg-left">Overview</span></h2>
+          <h2 class="section-title">企業概要<span class="section-title__bg-left section-title__bg-left--overview">Overview</span></h2>
           <div class="overview__contents">
             <div class="overview__img">
               <picture>
@@ -321,7 +318,7 @@
       <!-- blog -->
       <section class="blog top-blog">
         <div class="blog__inner section-inner">
-          <h2 class="section-title">ブログ<span class="section-title__bg-right">blog</span></h2>
+          <h2 class="section-title">ブログ<span class="section-title__bg-right section-title__bg-right--blog">Blog</span></h2>
           <div class="blog-cards">
             <article class="blog-cards__item blog-card">
               <a href="#" class="blog-card__list">
@@ -401,14 +398,15 @@
       <!-- //blog -->
 
       <!-- contact -->
-      <section class="contact top-contact">
+      <section class="contact contact-bg top-contact">
+        
         <div class="contact__inner section-inner">
-          <h2 class="section-title">お問い合わせ<span class="section-title__bg-left">Contact</span></h2>
+          <h2 class="section-title">お問い合わせ<span class="section-title__bg-left section-title__bg-left--contact">Contact</span></h2>
           <p class="contact__text">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </p>
           <div class="contact__btn">
-            <a href="" class="button">お問い合わせへ</a>
+            <a href="" class="button contact__btn--text">お問い合わせへ</a>
           </div>
         </div>
       </section>
@@ -421,18 +419,19 @@
           <div class="footer__logo">
             <img src="../assets/images/common/logo.png" alt="code upsのロゴ">
           </div>
-          <ul class="footer-nav__items">
+          <ul class="footer-nav__items footer-nav__sp">
             <li class="footer-nav__item footer-nav__item--sp"><a href="">トップ</a></li>
             <li class="footer-nav__item"><a href=""><span>お知らせ</span></a></li>
             <li class="footer-nav__item"><a href=""><span>事業内容</span></a></li>
-            <li class="footer-nav__item"><a href=""><span>制作実績</span></a></li>
+            <li class="footer-nav__item footer-nav__item--pc"><a href=""><span>制作実績</span></a></li>
             <li class="footer-nav__item"><a href=""><span>企業概要</span></a></li>
-            <li class="footer-nav__item"><a href=""><span>自社メディア</span></a></li>
+            <li class="footer-nav__item footer-nav__item--sp"><a href=""><span>ブログ</span></a></li>
+            <li class="footer-nav__item footer-nav__item--pc"><a href=""><span>自社メディア</span></a></li>
             <li class="footer-nav__item"><a href=""><span>お問い合わせ</span></a></li>
           </ul>
         </nav>
         <div class="footer__copyright">
-          <small>&copy;2021 CodeUps Inc.</small>
+          <small>&copy; 2021 CodeUps Inc.</small>
         </div>
       </div>
     </footer>

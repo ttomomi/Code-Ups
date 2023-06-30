@@ -6,9 +6,13 @@
 	vertical-align: middle;
   padding: rem(20);
   position: fixed;
-  right: rem(31);
-  bottom: rem(32);
+  right: rem(25);
+  bottom: rem(33);
   z-index: 20;
+  @include mq(md) {
+    bottom: rem(34);
+    right: rem(36);
+  }
 }
 .arrow::before,
 .arrow::after {
@@ -27,12 +31,12 @@
 	background: $white;
 }
 .sample5-5::after {
-  width: rem(24);
-  height: rem(24);
-	border-top: rem(2) solid $black;
-	border-right: rem(2) solid $black;
+  width: rem(19);
+  height: rem(19);
+	border-top: 2px solid $black;
+	border-right: 2px solid $black;
   margin-top: rem(16.5);
-  left: rem(10.5);
+  left: rem(12.5);
   transform: rotate(-45deg);
 }
 

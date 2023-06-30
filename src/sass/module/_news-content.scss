@@ -3,7 +3,7 @@
 .news-content__info {
   @include mq(md) {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 }
 .news-content +
@@ -20,17 +20,17 @@
 .news-content__category,
 .news-content__text {
   color: $white;
+  font-weight: $regular;
 }
 .news-content__date,
 .news-content__text {
   font-size: rem(16);
-  font-weight: $regular;
 }
 .news-content__category {
   font-size: rem(14);
   font-weight: $regular;
   line-height: 1;
-  margin-left: rem(28);
+  margin-left: rem(47);
   padding: rem(8) rem(21);
   border: 1px solid $white;
   flex-shrink: 0;
@@ -39,10 +39,11 @@
   margin-top: rem(14);
   @include mq(md) {
     margin-top: 0;
+    margin-left: rem(61);
   }
 }
 .news-content__text {
+  line-height: 1.448125;
   @include mq(md) {
-    margin-left: rem(61);
   }
 }

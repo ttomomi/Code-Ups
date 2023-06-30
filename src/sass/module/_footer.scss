@@ -10,7 +10,7 @@
 .footer__inner {
   padding: 0 $padding-sp;
   margin: auto;
-  max-width: rem(1216);
+  max-width: rem(1266);
   width: 100%;
   @include mq(md) {
     padding: 0 $padding-pc;
@@ -18,12 +18,13 @@
 }
 .footer__copyright {
   text-align: center;
-  margin-top: rem(32);
+  margin-top: rem(30);
   color: $white;
-  font-size: rem(10);
+  font-size: rem(11);
   font-weight: $regular;
   line-height: 1;
-  letter-spacing: 0.012em;
+  letter-spacing: 0.16em;
+  text-indent: 0.4em;
   @include mq(md) {
     font-size: rem(15);
     margin-top: rem(75);

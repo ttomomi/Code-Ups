@@ -6,8 +6,14 @@
   font-weight: $regular;
   font-size: rem(20);
   text-align: center;
-  padding-top: rem(49);
+  padding-top: rem(49.5);
   letter-spacing: 0.08em;
+  @include mq(md) {
+    font-size: rem(30);
+    line-height: 1.1666666;
+    letter-spacing: 0.02em;
+    text-indent: 0.02em;
+  }
 }
 .section-title__bg-right,
 .section-title__bg-left {
@@ -19,10 +25,10 @@
   color: $yellow;
   opacity: 0.2;
   line-height: 1.437;
-  top: 0;
   left: 50%;
+  letter-spacing: 0.01em;
+  text-indent: 0;
   transform: translateX(-50%);
-  z-index: -1;
   @include mq(md) {
     font-size: rem(110);
     line-height: 1.437;
@@ -31,7 +37,26 @@
 }
 .section-title__bg-right {
   text-align: right;
+  top: rem(-4);
 }
 .section-title__bg-left {
   text-align: left;
+  top: rem(6);
+}
+.section-title__bg-right.section-title__bg-right--blog {
+  @include mq(md) {
+  top: rem(-12);
+  }
+}
+.section-title__bg-left.section-title__bg-left--overview {
+  @include mq(md) {
+  top: rem(-2);
+  letter-spacing: 0.02em;
+}
+}
+.section-title__bg-left.section-title__bg-left--contact {
+  @include mq(md) {
+  top: rem(-41);
+  letter-spacing: 0.02em;
+}
 }

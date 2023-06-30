@@ -38,7 +38,11 @@
   text-align: center;
   color: #fff;
   font-size: rem(16);
+  letter-spacing: 0.2em;
+  text-indent: 0.2em;
 }
+
+// ホバー時黄色の線
 .sp-nav__item a span {
   position: relative;
 }
@@ -49,8 +53,8 @@
   width: 100%;
   height: rem(1);
   background: #FFEA2E;
-  bottom: rem(-3);       /*アンダーラインが位置する、各リストの下端からの高さ　ヘッダーの下端に合わせています*/
-  visibility: hidden; /*ホバー前に、アンダーラインを可視化しない*/
+  bottom: rem(-3);
+  visibility: hidden;
 }
 .sp-nav__item a:hover span::after {
   visibility: visible;
