@@ -50,3 +50,19 @@
   @include mq(md) {
   }
 }
+// ホバーすると下線が出る
+
+
+.news-content__text {
+  text-decoration: none; 
+  color: $white; 
+  background-image: linear-gradient(90deg, $white, $white); 
+  background-repeat: no-repeat;
+  background-position: left bottom; 
+  background-size: 0 rem(1); 
+  transition: background-size 0.3s;
+}
+
+.news-content__text:hover {
+  background-size: 100% rem(1); 
+}
