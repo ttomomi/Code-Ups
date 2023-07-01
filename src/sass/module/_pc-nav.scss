@@ -33,7 +33,7 @@
     color: $white;
     font-size: rem(16);
     font-weight: $regular;
-    line-height: 1;
+    line-height: 2.1875;
     letter-spacing: 0.16em;
     text-indent: 0.15em;
     padding: 0 rem(13);
@@ -58,8 +58,8 @@
   width: 100%;
   height: rem(1);
   background: #FFEA2E;
-  bottom: rem(-3);       /*アンダーラインが位置する、各リストの下端からの高さ　ヘッダーの下端に合わせています*/
-  visibility: hidden; /*ホバー前に、アンダーラインを可視化しない*/
+  bottom: 0;
+  visibility: hidden; 
   }
 }
 .pc-nav__item  a:hover span::after {

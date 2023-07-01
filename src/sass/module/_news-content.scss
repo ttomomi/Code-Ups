@@ -30,10 +30,13 @@
   font-size: rem(14);
   font-weight: $regular;
   line-height: 1;
-  margin-left: rem(47);
+  margin-left: rem(28);
   padding: rem(8) rem(21);
   border: 1px solid $white;
   flex-shrink: 0;
+  @include mq(md) {
+    margin-left: rem(47);
+  }
 }
 .news-content__block {
   margin-top: rem(14);

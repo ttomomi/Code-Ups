@@ -2,7 +2,7 @@
 
 .sp-nav {
   transform: translateX(-100%);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -11,6 +11,7 @@
   height: 100vh;
   z-index: 8888;
   transition: ease .3s;
+  overflow-y: scroll;
   @include mq(md) {
     display: none;
   }
@@ -38,8 +39,8 @@
   text-align: center;
   color: #fff;
   font-size: rem(16);
-  letter-spacing: 0.2em;
-  text-indent: 0.2em;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
 }
 
 // ホバー時黄色の線

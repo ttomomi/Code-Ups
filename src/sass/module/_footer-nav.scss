@@ -31,7 +31,7 @@
   @include mq(md) {
     padding: 0 rem(16);
     line-height: 2.1875;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.09em;
   }
 }
 .footer-nav__item:last-child a {
@@ -49,8 +49,8 @@
   width: 100%;
   height: rem(1);
   background: #FFEA2E;
-  bottom: -1px;       /*アンダーラインが位置する、各リストの下端からの高さ　ヘッダーの下端に合わせています*/
-  visibility: hidden; /*ホバー前に、アンダーラインを可視化しない*/
+  bottom: rem(-3); 
+  visibility: hidden; 
   }
 .footer-nav__item a:hover span::after {
   visibility: visible;

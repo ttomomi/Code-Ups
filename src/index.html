@@ -7,8 +7,8 @@
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
     <title>CodeUps</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="Code Upsの企業サイト" />
+    <meta name="keywords" content="Code Ups,企業サイト,企業カテゴリ" />
     <!-- ogp -->
     <meta property="og:title" content="" />
     <meta property="og:type" content="" />
@@ -54,16 +54,16 @@
               <li class="sp-nav__item"><a href="#"><span>お問い合わせ</span></a></li>
             </ul>
           </div>
-            <div class="pc-nav">
-              <ul class="pc-nav__items">
-                <li class="pc-nav__item"><a href="#"><span>お知らせ</span></a></li>
-                <li class="pc-nav__item"><a href="#"><span>事業内容</span></a></li>
-                <li class="pc-nav__item"><a href="#"><span>制作実績</span></a></li>
-                <li class="pc-nav__item"><a href="#"><span>企業概要</span></a></li>
-                <li class="pc-nav__item"><a href="#"><span>ブログ</span></a></li>
-                <li class="pc-nav__item pc-nav__item--white"><a href="#">お問い合わせ</a></li>
-              </ul>
-            </div>
+          <div class="pc-nav">
+            <ul class="pc-nav__items">
+              <li class="pc-nav__item"><a href="#"><span>お知らせ</span></a></li>
+              <li class="pc-nav__item"><a href="#"><span>事業内容</span></a></li>
+              <li class="pc-nav__item"><a href="#"><span>制作実績</span></a></li>
+              <li class="pc-nav__item"><a href="#"><span>企業概要</span></a></li>
+              <li class="pc-nav__item"><a href="#"><span>ブログ</span></a></li>
+              <li class="pc-nav__item pc-nav__item--white"><a href="#">お問い合わせ</a></li>
+            </ul>
+          </div>
         </div>
       </header>
 
@@ -127,10 +127,10 @@
       <!-- ./メインビジュアル -->
 
       <!-- news -->
-      <article class="news top-news">
+      <div class="news top-news">
         <div class="news__inner section-inner">
           <div class="news-contents">
-            <article class="news-contents__item news-content">
+            <div class="news-contents__item news-content">
               <div class="news-content__info">
                 <time class="news-content__date" datetime="2020-07-20">2020.07.20</time>
                 <span class="news-content__category">お知らせ</span>
@@ -141,19 +141,21 @@
                 </div>
               </div>
               
-            </article>
+            </div>
             <div class="news-contents__btn">
               <a href="">すべて見る</a>
             </div>
           </div>
         </div>
-      </article>
+      </div>
       <!-- /.news -->
 
       <!-- content -->
       <section class="content top-content">
         <div class="content__inner section-inner">
-          <h2 class="section-title">事業内容<span class="section-title__bg-left">Content</span></h2>
+          <h2 class="section-title">事業内容
+            <span class="section-title__bg-left section-title__bg-left--content">Content</span>
+          </h2>
           <div class="content-block">
             <a href="" class="content-block__item">
               <picture>
@@ -281,7 +283,7 @@
       <!-- /.works -->
 
       <!-- Overview -->
-      <section class="overview top-works">
+      <section class="overview top-overview">
         <div class="overview__inner section-inner">
           <h2 class="section-title">企業概要<span class="section-title__bg-left section-title__bg-left--overview">Overview</span></h2>
           <div class="overview__contents">
@@ -420,7 +422,7 @@
             <img src="../assets/images/common/logo.png" alt="code upsのロゴ">
           </div>
           <ul class="footer-nav__items footer-nav__sp">
-            <li class="footer-nav__item footer-nav__item--sp"><a href="">トップ</a></li>
+            <li class="footer-nav__item footer-nav__item--sp"><a href=""><span>トップ</span></a></li>
             <li class="footer-nav__item"><a href=""><span>お知らせ</span></a></li>
             <li class="footer-nav__item"><a href=""><span>事業内容</span></a></li>
             <li class="footer-nav__item footer-nav__item--pc"><a href=""><span>制作実績</span></a></li>
@@ -436,7 +438,9 @@
       </div>
     </footer>
     <div id="page-top">
-      <a href="#" class="arrow sample5-5"></a>
+      <a href="#" class="">
+        <div class="arrow"></div>
+      </a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>

@@ -4,7 +4,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   background-color: $black;
-  margin-top: rem(40);
+  margin-top: rem(48);
   @include mq(md) {
     margin-right: 0;
     display: flex;
@@ -13,18 +13,18 @@
     padding-top: rem(80);
     padding-bottom: rem(80);
     padding-left: rem(91);
+    margin-top: rem(40);
   }
   }
 
 .overview__img {
   position: relative;
-  bottom: rem(-8);
+  bottom: 0;
   object-fit: cover;
   aspect-ratio: 375 / 261;
   @include mq(md) {
   max-width: rem(557);
   width: 100%;
-  bottom: 0;
   aspect-ratio: 557 /389;
   
   }
@@ -45,7 +45,7 @@
   line-height: 1.448;
   letter-spacing: 0.1em;
   text-indent: 0.9em;
-  padding-top: rem(32);
+  padding-top: rem(25);
   text-align: center;
   @include mq(md) {
     font-size: rem(25);
@@ -75,7 +75,7 @@
   text-align: center;
   @include mq(md) {
     text-align: left;
-    margin-top: rem(47);
+    margin-top: rem(49);
   }
 }
 // 黄色い線背景

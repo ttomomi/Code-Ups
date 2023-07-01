@@ -37,11 +37,17 @@
 }
 .section-title__bg-right {
   text-align: right;
-  top: rem(-4);
+  top: rem(3);
+  @include mq(md) {
+    top: rem(-4);
+  }
 }
 .section-title__bg-left {
   text-align: left;
   top: rem(6);
+}
+.section-title__bg-left.section-title__bg-left--content {
+  top: rem(2);
 }
 .section-title__bg-right.section-title__bg-right--blog {
   @include mq(md) {
@@ -49,12 +55,16 @@
   }
 }
 .section-title__bg-left.section-title__bg-left--overview {
+  top: rem(4);
+  letter-spacing: 0.03em;
   @include mq(md) {
-  top: rem(-2);
-  letter-spacing: 0.02em;
+    top: rem(-2);
+    letter-spacing: 0.02em;
 }
 }
 .section-title__bg-left.section-title__bg-left--contact {
+  top: rem(3);
+  letter-spacing: 0.05em;
   @include mq(md) {
   top: rem(-41);
   letter-spacing: 0.02em;

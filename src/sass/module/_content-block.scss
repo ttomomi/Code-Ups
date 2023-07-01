@@ -39,7 +39,7 @@
   line-height: 1;
   @include mq(md) {
     font-size: rem(25);
-    list-style: 0.05em;
+    letter-spacing: 0.05em;
   }
 }
 .content-block__item::before {
