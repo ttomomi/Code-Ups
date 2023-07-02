@@ -60,6 +60,7 @@ margin-top: rem(2);
   line-height: 1;
   letter-spacing: 0.08em;
   text-indent: 0.08em;
+  font-weight: $regular;
   @include mq(md) {
     padding: rem(5) rem(5);
   }
@@ -68,12 +69,14 @@ margin-top: rem(2);
 .blog-card__text {
   padding-top: rem(2);
   letter-spacing: 0.08em;
+  font-weight: $regular;
   @include mq(md) {
     padding-top: rem(6);
   }
 }
 .blog-card__date {
   letter-spacing: 0.09em;
+  font-weight: $regular;
   @include mq(md) {
     letter-spacing: 0.07em;
   }
