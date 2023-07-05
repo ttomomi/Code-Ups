@@ -131,20 +131,17 @@
       <!-- news -->
       <div class="news top-news">
         <div class="news__inner section-inner">
-          <div class="news-contents">
-            <div class="news-contents__item news-content">
-              <div class="news-content__info">
-                <time class="news-content__date" datetime="2020-07-20">2020.07.20</time>
-                <span class="news-content__category">お知らせ</span>
-                <div class="news-content__block">
-                  <a href="#" class="news-content__text">
-                    記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
-                  </a>
-                </div>
-              </div>
-              
+          <div class="news-content">
+            <div class="news-content__info">
+              <time class="news-content__date" datetime="2020-07-20">2020.07.20</time>
+              <span class="news-content__category">お知らせ</span>
             </div>
-            <div class="news-contents__btn">
+            <div class="news-content__block">
+              <a href="#" class="news-content__text">
+                記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
+              </a>
+            </div>
+            <div class="news-content__btn">
               <a href="">すべて見る</a>
             </div>
           </div>
@@ -160,55 +157,63 @@
           </h2>
           <div class="content-block">
             <a href="" class="content-block__item">
-              <picture>
-                <source
-                  srcset="./assets/images/common/content-img1.jpg"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  src="./assets/images/common/content-img-sp1.jpg"
-                  alt="経営理念ページへ"
-                />
+              <div class="content-block__image">
+                <picture">
+                  <source
+                    srcset="./assets/images/common/content-img1.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./assets/images/common/content-img-sp1.jpg"
+                    alt="経営理念ページへ"
+                  />
+              </div>
               </picture>
               <p class="content-block__text">経営理念ページへ</p>
             </a>
             <a href="" class="content-block__item">
-              <picture>
-                <source
-                  srcset="./assets/images/common/content-img2.jpg"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  src="./assets/images/common/content-img-sp2.jpg"
-                  alt="理念1へ"
-                />
-              </picture>
+              <div class="content-block__image">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/content-img2.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./assets/images/common/content-img-sp2.jpg"
+                    alt="理念1へ"
+                  />
+                </picture>
+              </div>
               <p class="content-block__text">理念1へ</p>
             </a>
             <a href="" class="content-block__item">
-              <picture>
-                <source
-                  srcset="./assets/images/common/content-img3.jpg"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  src="./assets/images/common/content-img-sp3.jpg"
-                  alt="理念2へ"
-                />
-              </picture>
+              <div class="content-block__image">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/content-img3.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./assets/images/common/content-img-sp3.jpg"
+                    alt="理念2へ"
+                  />
+                </picture>
+              </div>
               <p class="content-block__text">理念2へ</p>
             </a>
             <a href="" class="content-block__item">
-              <picture>
-                <source
-                  srcset="./assets/images/common/content-img4.jpg"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  src="./assets/images/common/content-img-sp4.jpg"
-                  alt="理念3へ"
-                />
-              </picture>
+              <div class="content-block__image">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/content-img4.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./assets/images/common/content-img-sp4.jpg"
+                    alt="理念3へ"
+                  />
+                </picture>
+              </div>
               <p class="content-block__text">理念3へ</p>
             </a>
           </div>
@@ -327,14 +332,16 @@
             <article class="blog-cards__item blog-card">
               <a href="#" class="blog-card__list">
                 <figure class="blog-card__img">
-                  <source
-                        srcset="./assets/images/common/blog-card1-pc.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="./assets/images/common/blog-card1.jpg"
-                        alt="ブログカード1"
-                      />
+                  <picture>
+                    <source
+                          srcset="./assets/images/common/blog-card1-pc.jpg"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          src="./assets/images/common/blog-card1.jpg"
+                          alt="ブログカード1"
+                        />
+                  </picture>
                 </figure>
                 <div class="blog-card__body">
                   <h3 class="blog-card__title  blog-card__hover">
@@ -357,14 +364,16 @@
             <article class="blog-cards__item blog-card">
               <a href="#" class="blog-card__list">
                 <figure class="blog-card__img">
-                  <source
-                        srcset="./assets/images/common/blog-card2-pc.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="./assets/images/common/blog-card2.jpg"
-                        alt="ブログカード2"
-                      />
+                  <picture>
+                    <source
+                          srcset="./assets/images/common/blog-card2-pc.jpg"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          src="./assets/images/common/blog-card2.jpg"
+                          alt="ブログカード2"
+                        />
+                  </picture>
                 </figure>
                 <div class="blog-card__body">
                   <h3 class="blog-card__title  blog-card__hover">
@@ -387,14 +396,16 @@
             <article class="blog-cards__item blog-card">
               <a href="#" class="blog-card__list">
                 <figure class="blog-card__img">
-                  <source
-                        srcset="./assets/images/common/blog-card3-pc.jpg"
-                        media="(min-width: 768px)"
-                      />
-                      <img
-                        src="./assets/images/common/blog-card3.jpg"
-                        alt="ブログカード3"
-                      />
+                  <picture>
+                    <source
+                          srcset="./assets/images/common/blog-card3-pc.jpg"
+                          media="(min-width: 768px)"
+                        />
+                        <img
+                          src="./assets/images/common/blog-card3.jpg"
+                          alt="ブログカード3"
+                        />
+                  </picture>
                 </figure>
                 <div class="blog-card__body">
                   <h3 class="blog-card__title blog-card__hover">

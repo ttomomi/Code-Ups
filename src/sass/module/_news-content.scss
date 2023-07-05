@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.news-content__info {
+.news-content {
   @include mq(md) {
     display: flex;
     align-items: baseline;
@@ -10,6 +10,12 @@
 .news-content
 {
   margin-top: rem(32);
+}
+.news-content__info {
+  @include mq(md) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .news-content__date,
 .news-content__category {
@@ -41,6 +47,7 @@
 .news-content__block {
   margin-top: rem(14);
   @include mq(md) {
+    width: 60%;
     margin-top: 0;
     margin-left: rem(61);
   }
@@ -50,8 +57,17 @@
   @include mq(md) {
   }
 }
-// ホバーすると下線が出る
+.news-content__btn {
+  margin-top: rem(27);
+  text-align: center;
+  @include mq(md) {
+    width: 17%;
+    margin-top: 0;
+    text-align: inherit;
+  }
+}
 
+// ホバーすると下線が出る
 .news-content__text {
   text-decoration: none; 
   color: $white; 
@@ -64,4 +80,68 @@
 
 .news-content__text:hover {
   background-size: 100% rem(1); 
+}
+
+// ホバーすると左から右にボタンの色が変わる
+.news-content__btn a {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  font-size: rem(20);
+  font-weight: $regular;
+  color: $white;
+  width: rem(335);
+  background-color: $black;
+  padding: rem(14) 0;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-indent: 0.1em;
+  text-decoration: none;
+  border: 1px solid $white;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+  @include mq(md) {
+    position: relative;
+    width: rem(134);
+    padding: rem(7) rem(22);
+    font-size: rem(16);
+    font-weight: $normal;
+    background-color: $white;
+    color: #000;
+    margin-left: rem(49);
+    margin-top: 0;
+    letter-spacing: 0.04em;
+    text-indent: 0.36em;
+    flex-shrink: 0;
+    white-space: nowrap;
+    border: none;
+    }
+}
+.news-content__btn a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: 0.3s ease-in-out;
+}
+
+.news-content__btn a:hover::before {
+  transform: scale(1, 1);
+  width: 100%;
+  @include mq(md) {
+    transform: scale(1, 1);
+    width: 100%;
+  }
+}
+.news-content__btn a:hover {
+  color: $black;
+  @include mq(md) {
+  color: $white;
+}
 }
