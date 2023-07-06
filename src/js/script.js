@@ -27,7 +27,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // スクロールすると背景色変更
   $(window).on("scroll", function () {
     const sliderHeight = $(".mv").height();
-    if (sliderHeight - 30 < $(this).scrollTop()) {
+    if (sliderHeight  < $(this).scrollTop()) {
       $(".js-header").addClass("headerColorScroll");
     } else {
       $(".js-header").removeClass("headerColorScroll");
@@ -86,3 +86,4 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
           disableOnInteraction: false, // ユーザーが操作しても自動再生を継続
         },
   });
+

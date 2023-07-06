@@ -2,10 +2,11 @@
 
 .section-inner {
   padding: 0 $padding-sp;
-  max-width: $inner;
+  max-width: rem(600);
   width: 100%;
   margin: auto;
   @include mq(md) {
     padding: 0 $padding-pc;
+    max-width: $inner;
   }
 }

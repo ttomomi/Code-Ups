@@ -33,6 +33,10 @@ font-size: rem(18);
 line-height: 2;
 letter-spacing: 0.05em;
 margin-top: rem(2);
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2; 
+overflow: hidden;
 @include mq(md) {
   margin-top: 0;
   letter-spacing: 0.06em;
@@ -70,6 +74,10 @@ margin-top: rem(2);
   padding-top: rem(2);
   letter-spacing: 0.08em;
   font-weight: $regular;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; 
+  overflow: hidden;
   @include mq(md) {
     padding-top: rem(6);
   }
