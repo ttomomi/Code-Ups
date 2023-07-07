@@ -126,10 +126,13 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: $black;
+  background-color: $white;
   transform: scale(0, 1);
   transform-origin: left top;
   transition: 0.3s ease-in-out;
+  @include mq(md) {
+    background-color: $black;
+  }
 }
 
 .news-content__btn a:hover::before {
