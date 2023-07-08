@@ -14,12 +14,6 @@
     align-items: center;
   }
 }
-.pc-nav__item:nth-of-type(1) a {
-  padding-left: 0;
-}
-.pc-nav__item:nth-of-type(5) a {
-  padding-right: rem(29);
-}
 .pc-nav__item {
   @include mq(md) {
     height: inherit;
@@ -43,6 +37,9 @@
   background-color: $white;
   color: $black;
   padding: 0 rem(28);
+}
+.pc-nav__item--white {
+  margin-left: rem(16);
 }
 // ホバー時アンダーライン
 .pc-nav__item a span {
