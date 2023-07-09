@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.contact__inner.section-inner {
-  @include mq(md) {
-    max-width: rem(1150);
-  }
-}
 .contact__inner {
   text-align: center;
 }

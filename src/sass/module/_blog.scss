@@ -1,10 +1,5 @@
 @use "global" as *;
 
-.blog__inner.section-inner {
-  @include mq(md) {
-    max-width: rem(1150);
-  }
-}
 .blog__btn {
   margin-top: rem(23);
   text-align: center;

@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.works-contents.inner {
+  padding-right: 0;
+  padding-left: 0;
+  @include mq(md) {
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+.works-contents {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.works-contents__img {
+  position: relative;
+  bottom: 0;
+  object-fit: cover;
+  aspect-ratio: 375 / 261;
+  @include mq(md) {
+  max-width: rem(557);
+  width: 50.6%;
+  aspect-ratio: 557 /389;
+  }
+}
+.works-contents__item {
+  @include mq(md) {
+    width: 49.4%;
+  }
+}

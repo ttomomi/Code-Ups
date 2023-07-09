@@ -3,8 +3,6 @@
 .content-block {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
   margin-top: rem(48);
 }
 .content-block__item {
@@ -49,6 +47,7 @@
   letter-spacing: 0.09em;
   text-indent: 0.09em;
   line-height: 1;
+  z-index: 1;
   @include mq(md) {
     font-size: rem(25);
     letter-spacing: 0.05em;

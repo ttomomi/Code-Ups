@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.content__inner.section-inner {
-  @include mq(md) {
-    max-width: rem(1150);
-  }
-}
-
 // 黄色い線背景
 .content {
   position: relative;
