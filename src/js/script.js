@@ -17,12 +17,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  // ウィンドウがリサイズされたとき
- 
-  $(window).resize(function(){ // ウィンドウがリサイズされたら
-    $('.js-drawer-menu').removeClass('is-open');
-    $('.js-hamburger').removeClass('is-open');
-  });
 
   // スクロールすると背景色変更
   $(window).on("scroll", function () {
@@ -35,7 +29,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 });
 
   // ページトップボタン
-  const pageTop = $("#page-top");
+  const pageTop = $(".page-top");
   pageTop.hide();
   $(window).on("scroll", function () {
     const sliderHeight = $(".mv").height();

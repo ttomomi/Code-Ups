@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .top-works {
-  margin-top: rem(70);
+  margin-top: rem(120);
   @include mq(md) {
-    margin-top: rem(153);
+    margin-top: rem(202);
   }
 }

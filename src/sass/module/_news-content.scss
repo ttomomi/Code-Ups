@@ -15,7 +15,7 @@
   @include mq(md) {
     display: flex;
     align-items: baseline;
-    width: 23%;
+    width: 22%;
   }
 }
 .news-content__date,
@@ -48,9 +48,9 @@
 .news-content__block {
   margin-top: rem(14);
   @include mq(md) {
-    width: 59%;
+    width: 56%;
     margin-top: 0;
-    margin-left: rem(61);
+    margin-left: rem(63);
   }
 }
 .news-content__text {
@@ -62,7 +62,7 @@
   margin-top: rem(27);
   text-align: center;
   @include mq(md) {
-    width: 18%;
+    width: 13%;
     margin-top: 0;
     text-align: inherit;
     margin-left: rem(48);

@@ -12,6 +12,7 @@
   z-index: 8888;
   transition: ease .3s;
   overflow-y: scroll;
+  padding-top: rem(50);
   @include mq(md) {
     display: none;
   }
@@ -20,8 +21,8 @@
   transform: translateX(0);
 }
 .sp-nav__items {
-  padding-top: rem(25);
-  padding-bottom: rem(20);
+  padding-top: rem(207);
+  padding-bottom: rem(300);
   height: 100vh;
   overflow: scroll;
   display: grid;
