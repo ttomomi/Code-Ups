@@ -105,8 +105,12 @@ overflow: hidden;
 }
 
 .blog-card__img {
-  padding-top: 66.567164%;
   position: relative;
+}
+.blog-card__img::before {
+  content: "";
+  display: block;
+  padding-top: 66.567164%;
   @include mq(md) {
     padding-top: 66.571429%;
   }

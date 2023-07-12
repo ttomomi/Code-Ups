@@ -8,15 +8,16 @@
 .content-block__item {
   position: relative;
   width: 50%;
-  aspect-ratio: 188 / 168;
-  object-fit: cover;
   @include mq(md) {
     width: 25%;
-    aspect-ratio: 320 / 320;
   }
 }
 .content-block__image {
   position: relative;
+}
+.content-block__image::before {
+  content: "";
+  display: block;
   padding-top: 89.361702%;
   @include mq(md) {
     padding-top: 100%;
