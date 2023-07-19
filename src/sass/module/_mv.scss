@@ -8,6 +8,13 @@
   width: 100%;
   height: 100%;
 }
+.mv__swiper-img {
+  height: 100%;
+}
+.mv__swiper-img img {
+  height: 100%;
+  object-fit: cover;
+}
 .mv__header {
   position: absolute;
   width: 100%;
@@ -42,4 +49,23 @@
     letter-spacing: 0.02em;
     text-indent: 0.02em;
   }
+}
+// MVのswiperをズーム
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide-active .mv__swiper-img,
+.swiper-slide-duplicate-active .mv__swiper-img,
+.swiper-slide-prev .mv__swiper-img {
+  animation: zoomUp 12s linear 0s normal both;
 }

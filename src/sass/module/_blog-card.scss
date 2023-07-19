@@ -131,8 +131,9 @@ overflow: hidden;
   color: $white;
   transition: all 0.3s ease 0s;
 }
-.blog-cards__item:hover 
-.blog-card__hover {
+.blog-cards__item:hover .blog-card__title,
+.blog-cards__item:hover .blog-card__text,
+.blog-cards__item:hover .blog-card__date {
   color: $white;
   transition: all 0.3s ease 0s;
 }

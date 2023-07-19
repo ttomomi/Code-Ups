@@ -1,7 +1,13 @@
 @use "global" as *;
 
-.contact__inner {
-  text-align: center;
+.contact {
+  padding-top: rem(67);
+  padding-bottom: rem(64);
+  background-color: $black;
+  @include mq(md) {
+    padding-top: rem(148);
+    padding-bottom: rem(149);
+  }
 }
 .contact__text {
   font-size: rem(16);
@@ -25,14 +31,4 @@
   @include mq(md) {
     margin-top: rem(61);
   }
-}
-
-// ボタンテキスト
-.button.contact__btn--text {
-  @include mq(md) {
-  font-size: rem(20);
-  padding: rem(19) 0;
-  text-indent: -0.4em;
-  letter-spacing: 0.1em;
- }
 }

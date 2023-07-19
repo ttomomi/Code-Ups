@@ -53,7 +53,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
   // swiper MV
-  var swiper1 = new Swiper(".js-mv-swiper", {
+  const swiper1 = new Swiper(".js-mv-swiper", {
     loop: true,
     effect: "fade", // フェード切り替え
     // 自動再生
@@ -69,7 +69,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // swiper Works
-  var swiper2 = new Swiper(".js-works-swiper", {
+  const swiper2 = new Swiper(".js-works-swiper", {
     pagination: {
       el: ".js-works-pagination",
       clickable: true,

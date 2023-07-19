@@ -1,11 +1,9 @@
 @use "global" as *;
 
 .blog-cards {
-  margin-top: rem(64);
   @include mq(md) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: rem(41);
   }
 }
 .blog-cards__item {

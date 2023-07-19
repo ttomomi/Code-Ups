@@ -41,9 +41,9 @@
   }
 }
 // 左側に寄せる
-.section-title__sub-right {
+.section-title__sub--right {
   @include mq(md) {
-    text-align-last: right;
+    text-align: right;
   }
 }
 // それぞれの英字タイトル高さピクパ
@@ -62,59 +62,3 @@
     top: rem(-90);
   }
 }
-// .section-title__bg-right,
-// .section-title__bg-left {
-//   position: absolute;
-//   display: inline-block;
-//   font-size: rem(50);
-//   font-family: $second-font-family;
-//   font-weight: $regular;
-//   color: $yellow;
-//   opacity: 0.2;
-//   line-height: 1.437;
-//   left: 50%;
-//   letter-spacing: 0.01em;
-//   text-indent: 0;
-//   transform: translateX(-50%);
-//   @include mq(md) {
-//     font-size: rem(110);
-//     line-height: 1.437;
-//     width: 100%;
-//   }
-// }
-// // セクションごとの高さの指定
-// .section-title__bg-right {
-//   text-align: right;
-//   top: rem(-42);
-//   @include mq(md) {
-//     top: rem(-49);
-//   }
-// }
-// .section-title__bg-left {
-//   text-align: left;
-//   top: rem(6);
-// }
-// .section-title__bg-left.section-title__bg-left--content {
-//   top: rem(-44);
-// }
-// .section-title__bg-right.section-title__bg-right--blog {
-//   @include mq(md) {
-//   top: rem(-67);
-//   }
-// }
-// .section-title__bg-left.section-title__bg-left--overview {
-//   top: rem(-44);
-//   letter-spacing: 0.03em;
-//   @include mq(md) {
-//     top: rem(-51);
-//     letter-spacing: 0.02em;
-// }
-// }
-// .section-title__bg-left.section-title__bg-left--contact {
-//   top: rem(-47);
-//   letter-spacing: 0.05em;
-//   @include mq(md) {
-//   top: rem(-91);
-//   letter-spacing: 0.02em;
-// }
-// }

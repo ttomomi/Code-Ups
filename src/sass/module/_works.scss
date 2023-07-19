@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.works__wrapper {
+  margin-top: rem(48);
+  background: $black;
+  @include mq(md) {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  margin-top: rem(40);
+  background: linear-gradient(90deg, transparent 0%, transparent calc(50% - 16rem), $black calc(50% - 16rem), $black 100%);
+  }
+}
+.works__content {
+  margin: auto;
+  @include mq(md) {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: rem(32);
+  }
+}
+.works__contents.inner {
+  padding-right: 0;
+  padding-left: 0;
+  @include mq(md) {
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+.works__contents {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.works__contents-img {
+  position: relative;
+  bottom: 0;
+  @include mq(md) {
+  width: 50.6%;
+  }
+}
+.works__contents-item {
+  @include mq(md) {
+    width: 49.4%;
+  }
+}
+.works__img {
+  position: relative;
+}
+.works__img::before {
+  content: "";
+  display: block;
+  padding-top: 69.6%;
+  @include mq(md) {
+    padding-top: 69.83842%;
+  }
+}
+.works__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+// swiperの編集
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom,rem(-20));
+  @include mq(md) {
+    bottom: var(--swiper-pagination-bottom,rem(-29));
+    left:  var(--swiper-pagination-left,rem(-20));
+  }
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,6px);
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #F9F871;
+}

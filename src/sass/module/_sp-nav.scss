@@ -21,10 +21,9 @@
   transform: translateX(0);
 }
 .sp-nav__items {
-  padding-top: rem(207);
-  padding-bottom: rem(300);
-  height: 100vh;
-  overflow: scroll;
+  padding-top: rem(100);
+  padding-bottom: rem(100);
+  height: rem(700);
   display: grid;
   place-content: center;
   place-items: center;

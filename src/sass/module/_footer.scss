@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.footer__logo {
+.footer-nav__logo {
   width: rem(70);
   margin: auto;
   @include mq(md) {
