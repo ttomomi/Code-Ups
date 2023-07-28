@@ -5,9 +5,9 @@
   padding-bottom: rem(21);
   padding-right: $padding-sp;
   padding-left: $padding-sp;
-  max-width: rem(600);
   @include mq(md) {
     padding: 0;
+    width: calc(510 / 1150 * 100%);
   }
 }
 .overview-content__title {

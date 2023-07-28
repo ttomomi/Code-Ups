@@ -47,16 +47,6 @@
   }
 }
 // それぞれの英字タイトル高さピクパ
-.section-title__sub--overview {
-  @include mq(md) {
-    top: rem(-52);
-  }
-}
-.section-title__sub--blog {
-  @include mq(md) {
-    top: rem(-60);
-  }
-}
 .section-title__sub--contact {
   @include mq(md) {
     top: rem(-90);

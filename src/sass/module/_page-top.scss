@@ -8,16 +8,17 @@
   right: rem(20);
   bottom: rem(41);
   z-index: 20;
+  transition: ease 0.3s;
   @include mq(md) {
     bottom: rem(32);
     right: rem(31);
   }
 }
-#page-top a {
+.page-top a {
   display: block;
   height: inherit;
 }
-.arrow {
+.page-top__arrow {
   display: inline-block;
   vertical-align: middle;
   color: $black;
@@ -28,23 +29,25 @@
   transform: translate(-50%, -50%) rotate(-45deg);
   top: 50%;
   left: 50%;
+  transition: ease 0.3s;
 }
 
-.arrow::before, .arrow::after {
+.page-top__arrow::before, .page-top__arrow::after {
   content: '';
   position: absolute;
   background: $black;
   border-radius: 0.1em;
+  transition: ease 0.3s;
 }
 
-.arrow::before {
+.page-top__arrow::before {
   top: 0;
   left: 0;
   right: 0;
   height: rem(2);
 }
 
-.arrow::after {
+.page-top__arrow::after {
   top: 0;
   right: 0;
   bottom: 0;
@@ -53,60 +56,10 @@
 
 
 // ホバー時色変化
-#page-top:hover {
+.page-top:hover {
   background: $black;
 }
-#page-top a:hover .arrow::before,
-#page-top a:hover .arrow::after {
+.page-top a:hover .page-top__arrow::before,
+.page-top a:hover .page-top__arrow::after {
   background: $white;
 }
-
-// .arrow {
-// 	position: relative;
-// 	display: inline-block;
-// 	vertical-align: middle;
-//   padding: rem(20);
-//   position: fixed;
-//   right: rem(25);
-//   bottom: rem(43);
-//   z-index: 20;
-//   @include mq(md) {
-//     bottom: rem(34);
-//     right: rem(36);
-//   }
-// }
-// .arrow::before,
-// .arrow::after {
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-// 	left: 0;
-// 	margin: auto;
-// 	content: "";
-// 	vertical-align: middle;
-// }
-
-// .sample5-5::before { 
-//   width: rem(45);
-//   height: rem(45);
-// 	background: $white;
-// }
-// .sample5-5::after {
-//   width: rem(19);
-//   height: rem(19);
-// 	border-top: 2px solid $black;
-// 	border-right: 2px solid $black;
-//   border-radius: rem(3);
-//   margin-top: rem(16.5);
-//   left: rem(12.5);
-//   transform: rotate(-45deg);
-// }
-
-// // ホバー時色変化
-// .sample5-5:hover::before {
-//   background: $black;
-// }
-// .sample5-5:hover::after {
-//   border-top: rem(2) solid $white;
-// 	border-right: rem(2) solid $white;
-// }
