@@ -11,7 +11,6 @@
   height: 100vh;
   z-index: 8888;
   transition: ease .3s;
-  overflow-y: scroll;
   padding-top: rem(50);
   @include mq(md) {
     display: none;
@@ -20,10 +19,15 @@
 .sp-nav.is-open {
   transform: translateX(0);
 }
+.sp-nav__scroll {
+  overflow: auto;
+  height: 100%;
+  padding: rem(50) 0 rem(50);
+}
 .sp-nav__items {
   padding-top: rem(100);
   padding-bottom: rem(100);
-  height: rem(700);
+  min-height: rem(700);
   display: grid;
   place-content: center;
   place-items: center;
@@ -59,4 +63,7 @@
 }
 .sp-nav__item a:hover span::after {
   visibility: visible;
+}
+.sp-nav__addClass {
+
 }

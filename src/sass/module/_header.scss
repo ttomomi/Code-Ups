@@ -14,19 +14,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   padding-left: rem(23);
   padding-right: rem(13);
+  z-index: 10000;
   @include mq(md) {
     padding-left: rem(32);
     padding-right: 0;
   }
 }
 /* スクロールしたらヘッダーメニューの背景色ー変更 */
-.header.headerColorScroll {
+.header__inner.headerColorScroll {
   background-color: #111;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   transition: 0.4s ease-out;
 }
 .pc-nav__item--white.headerColorScroll {
   background-color: $black;
   transition: 0.4s ease-out;
+}
+// 背景色をつける
+.header__inner.is-open {
+  background-color: #111;
 }
