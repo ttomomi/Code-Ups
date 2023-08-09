@@ -17,6 +17,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+    // タブメニュー
+  $(".js-content:first-of-type").css("display", "block");
+
+  $(".js-tab").on("click", function () {
+    $(".current").removeClass("current");
+    $(this).addClass("current");
+    const index = $(this).index();
+    $(".js-content").hide().eq(index).fadeIn(300);
+  });
+
 
   // スクロールすると背景色変更
   $(window).on("scroll", function () {
@@ -81,3 +91,48 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         },
   });
 
+// 制作実績詳細
+  // サムネイル
+const sliderThumbnail = new Swiper(".slider-thumbnail", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  loop: true,
+  slideToClickedSlide: true,
+  loopedSlides: 8,
+  breakpoints: {
+    768: {
+      spaceBetween: 8,
+      slidesPerView: 8,
+    },
+  }, // サムネイルの枚数
+});
+// スライダー
+const slider = new Swiper(".slider", {
+  loop: true, // ループ
+  speed: 1000,
+  loopedSlides: 8,
+  // 前後の矢印
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: sliderThumbnail,
+  },
+});
+
+// お問い合わせボタン
+const form = document.getElementsByClassName("js-form");
+const button =  document.getElementsByClassName("js-btn");
+form.addEventListener("input",update);
+function update() {
+  const isRequired = form.checkValidity();
+}
+function update() {
+  const isRequired = form.checkValidity();
+
+  if (isRequired) {
+    button.disabled = false;
+    return;
+  }
+}

@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.breadcrumbs {
+  display: flex;
+}
+.breadcrumbs__item {
+  font-size: rem(16);
+  color: $white;
+  font-weight: $regular;
+  line-height: 1;
+}
+.breadcrumbs__item:not(:last-of-type)::after {
+  content: ">";
+  margin: rem(5); /* 記号の左右の余白 */
+  color: $white; /* 記号の色 */
+}

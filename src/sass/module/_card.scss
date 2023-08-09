@@ -1,5 +1,5 @@
 @use "global" as *;
-.blog-card {
+.card {
   position: relative;
   margin-top: rem(28);
   display: flex;
@@ -7,13 +7,13 @@
     margin-top: 0;
   }
 }
-.blog-card:nth-child(n+2) {
+.card:nth-child(n+2) {
   margin-top: rem(25);
   @include mq(md) {
     margin-top: 0;
   }
 }
-.blog-card__body {
+.card__body {
   padding-top: rem(1);
   padding-right: rem(21);
   padding-left: rem(21);
@@ -23,16 +23,16 @@
     padding-left: rem(23);
   }
 }
-.blog-card__title,
-.blog-card__text,
-.blog-card__date {
+.card__title,
+.card__text,
+.card__date {
   color: $black;
 }
-.blog-card__category {
+.card__category {
   color: #000;
 }
 
-.blog-card__title {
+.card__title {
 font-weight: $normal;
 font-size: rem(18);
 line-height: 2;
@@ -48,13 +48,13 @@ overflow: hidden;
   line-height: 1.9444444;
 }
 }
-.blog-card__text,
-.blog-card__category,
-.blog-card__date {
+.card__text,
+.card__category,
+.card__date {
   font-size: rem(14);
   line-height: 1.85714;
 }
-.blog-card__info {
+.card__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +70,7 @@ overflow: hidden;
     padding-top: rem(9);
   }
 }
-.blog-card__category {
+.card__category {
   background-color: #FFEA2E;
   padding: rem(4) rem(4);
   line-height: 1;
@@ -82,7 +82,7 @@ overflow: hidden;
   }
 }
 
-.blog-card__text {
+.card__text {
   padding-top: rem(2);
   letter-spacing: 0.08em;
   font-weight: $regular;
@@ -90,24 +90,24 @@ overflow: hidden;
     padding-top: rem(6);
   }
 }
-.blog-card__date {
+.card__date {
   letter-spacing: 0.09em;
   font-weight: $regular;
   @include mq(md) {
     letter-spacing: 0.07em;
   }
 }
-.blog-card__list {
+.card__list {
   display: flex;
   flex-direction: column;
   background-color: $white;
   width: 100%;
 }
 
-.blog-card__img {
+.card__img {
   position: relative;
 }
-.blog-card__img::before {
+.card__img::before {
   content: "";
   display: block;
   padding-top: 66.567164%;
@@ -115,7 +115,7 @@ overflow: hidden;
     padding-top: 66.571429%;
   }
 }
-.blog-card__img img {
+.card__img img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -126,20 +126,20 @@ overflow: hidden;
 }
 
 // ホバー時 背景色変更
-.blog-card__list:hover {
+.card__list:hover {
   background-color: $black;
   color: $white;
   transition: all 0.3s ease 0s;
 }
-.blog-cards__item:hover .blog-card__title,
-.blog-cards__item:hover .blog-card__text,
-.blog-cards__item:hover .blog-card__date {
+.cards__item:hover .card__title,
+.cards__item:hover .card__text,
+.cards__item:hover .card__date {
   color: $white;
   transition: all 0.3s ease 0s;
 }
 
 // newマークの表示
-.blog-card:first-child::before {
+.card:first-child::before {
   position: absolute;
   z-index: 1;
   content: 'New';

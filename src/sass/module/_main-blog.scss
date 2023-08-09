@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.main-blog__tab {
+  margin-top: rem(86);
+  @include mq(md) {
+    margin-top: rem(118);
+  }
+}
+.main-blog__pagination {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(104);
+  }
+}

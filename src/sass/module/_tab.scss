@@ -1,0 +1,28 @@
+@use "global" as *; 
+
+.tab-list {
+  display: flex;
+  cursor: pointer;
+}
+.tab__item {
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.02em;
+  color: $white;
+  padding: rem(3) rem(8);
+  text-align: center;
+  text-transform: uppercase;
+}
+.tab__item:nth-child(n+1) {
+  margin-left: rem(24);
+  @include mq(md) {
+    margin-left: rem(40);
+  }
+}
+.tab__item.current {
+  background-color: $white;
+  color: $black;
+}
+.tab__box {
+  display: none;
+}

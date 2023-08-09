@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.related-article__title {
+  font-size: rem(16);
+  font-weight: $regular;
+  color: $white;
+  letter-spacing: 0.02em;
+  background-color: #333;
+  border: 1px solid $white;
+  text-align: center;
+  padding: rem(9);
+}
+.related-article__cards {
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;  
+    margin-top: rem(32);
+    margin-top: rem(80);
+  }
+}
+.related-article__card.card::before {
+  display: none;
+}
+.related-article__card {
+  @include mq(md) {
+  width: calc(25% - rem(32) * 3 / 4);
+}
+}
+.related-article__card + .related-article__card {
+  @include mq(md) {
+  margin-left: rem(32);
+}
+}
+.related-article__img {
+  position: relative;
+}
+.related-article__img::before {
+  @include mq(md) {
+  content: "";
+  display: block;
+  padding-top: calc(148 / 251 * 100%);
+}
+}
+// ホバー
+.related-article__card:hover .card__title {
+  color: $white;
+  transition: all 0.3s ease 0s;
+}

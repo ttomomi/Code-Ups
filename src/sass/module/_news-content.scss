@@ -81,3 +81,9 @@
 .news-content__text:hover {
   background-size: 100% rem(1); 
 }
+
+// 下層ページホバー
+.news-content__text--bottom:hover {
+  color: #f9f871;
+  background: none;
+}

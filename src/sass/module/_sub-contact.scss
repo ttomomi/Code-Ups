@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.sub-contact__wrapper {
+  margin: auto;
+}
+.sub-contact__wrapper {
+  margin-top: rem(85);
+  @include mq(md) {
+    margin-top: rem(115);
+  }
+}

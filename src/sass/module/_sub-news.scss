@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.sub-news__contents {
+  margin-top: rem(91);
+  @include mq(md) {
+    max-width: rem(860);
+    margin-top: rem(69);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.sub-news__pagination {
+  display: none;
+  @include mq(md) {
+    display: block;
+    margin-top: rem(108);
+  }
+}

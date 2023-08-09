@@ -1,0 +1,162 @@
+@use "global" as *;
+
+.sub-works__title {
+  font-size: rem(20);
+  font-weight: $normal;
+  color: $white;
+  line-height: 1;
+  margin-top: rem(53);
+  @include mq(md) {
+    font-size: rem(23);
+    margin-top: rem(91);
+  }
+}
+.works__meta {
+  display: flex;
+  font-size: rem(16);
+  font-weight: $regular;
+  color: $white;
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+.works__category {
+  border: 1px solid $white;
+  padding: rem(7) rem(23);
+  margin-left: rem(30);
+}
+.sub-works__container {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+.sub-works__inner.inner {
+  max-width: rem(800);
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// swiperカスタマイズ
+.slider-thumbnail {
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+.slider-thumbnail {
+  width: 100%;
+  overflow: hidden;
+  margin-right: calc(50% - 50vw);
+}
+.slider-thumbnail .swiper-slide {
+  opacity: .5;
+  transition: opacity .5s;
+  width: calc(100% / 3);
+}
+.slider-thumbnail .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+/* レイアウトのためのスタイル */
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+
+.sub-works__wrapper {
+  margin-top: rem(56);
+  @include mq(md) {
+    margin-top: rem(103);
+  }
+}
+.sub-works__items {
+  color: $white;
+  letter-spacing: 0.004em;
+}
+.sub-works__item {
+  border: 1px solid $white;
+  padding: rem(56) rem(10) rem(33);
+  position: relative;
+}
+.sub-works__item + .sub-works__item {
+  margin-top: rem(54);
+  @include mq(md) {
+    margin-top: rem(71);
+  }
+}
+.sub-works__head {
+  font-size: rem(20);
+  font-weight: $regular;
+  padding: rem(8) rem(24);
+  border: 1px solid $white;
+  border-radius: rem(32);
+  letter-spacing: 0.004em;
+  background-color: #111;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  transform: translateY(-50%);
+}
+.sub-works__text {
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(35 / 16);
+  letter-spacing: 0.004em;
+}
+.sub-works__link {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(104);
+  }
+}
+
+.sub-works__article {
+  margin-top: rem(120);
+  @include mq(md) {
+    margin-top: rem(104);
+  }
+}
+.sub-works__wrapper {
+  max-width: rem(600);
+}
+
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: rem(30);
+  margin: auto;
+  width: rem(30);
+  @include mq(md) {
+    height: rem(50);
+    width: rem(50);
+  }
+}
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+  height: rem(30);
+  width: rem(30);
+  @include mq(md) {
+    height: rem(50);
+  width: rem(50);
+  }
+}
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+  background-image: url(../images/common/swiper-button-prev.png);
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+  background-image: url(../images/common/swiper-button-next.png);
+}
+/* 画像サイズ調整 */
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
