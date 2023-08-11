@@ -12,7 +12,7 @@
   }
 }
 .sub-blog__content {
-  color: $white;
+  color: $black;
 }
 .sub-blog__content + .sub-blog__content {
   margin-top: rem(24);
@@ -43,7 +43,7 @@
   }
 }
 .sub-blog__category {
-  border: 1px solid $white;
+  border: 1px solid $black;
   display: inline-block;
   padding: rem(11) rem(23);
   margin-left: rem(24);
@@ -101,7 +101,7 @@
   letter-spacing: 0.02em;
   display: inline-block;
   position: relative;
-  border-bottom: 3px solid $white;
+  border-bottom: 3px solid $black;
 }
 .sub-blog__title3::after {
   content: "";

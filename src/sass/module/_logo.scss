@@ -1,11 +1,9 @@
 @use "global" as *;
 .logo {
-  width: rem(70);
-  height: rem(22);
+  color: $white;
+  font-size: rem(24);
   position: relative;
   z-index: 9999;
   @include mq(md) {
-    width: rem(94);
-    height: rem(29);
   }
 }

@@ -8,7 +8,7 @@
   font-size: rem(16);
   font-weight: $regular;
   letter-spacing: 0.02em;
-  color: $white;
+  color: $black;
   padding: rem(3) rem(8);
   text-align: center;
   text-transform: uppercase;
@@ -20,8 +20,8 @@
   }
 }
 .tab__item.current {
-  background-color: $white;
-  color: $black;
+  background-color: $black;
+  color: $white;
 }
 .tab__box {
   display: none;

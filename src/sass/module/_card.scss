@@ -71,7 +71,7 @@ overflow: hidden;
   }
 }
 .card__category {
-  background-color: #FFEA2E;
+  background-color: #796d0494;
   padding: rem(4) rem(4);
   line-height: 1;
   letter-spacing: 0.08em;
@@ -131,9 +131,9 @@ overflow: hidden;
   color: $white;
   transition: all 0.3s ease 0s;
 }
-.cards__item:hover .card__title,
-.cards__item:hover .card__text,
-.cards__item:hover .card__date {
+.card:hover .card__title,
+.cards:hover .card__text,
+.card:hover .card__date {
   color: $white;
   transition: all 0.3s ease 0s;
 }
@@ -143,7 +143,7 @@ overflow: hidden;
   position: absolute;
   z-index: 1;
   content: 'New';
-  color: $black;
+  color: $white;
   font-weight: $regular;
   font-size: rem(16);
   line-height: rem(60);

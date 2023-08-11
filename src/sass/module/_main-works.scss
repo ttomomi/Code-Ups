@@ -53,15 +53,32 @@
 .main-works__image::after {
   content: "カテゴリ1";
   position: absolute;
-  color: $white;
+  color: $black;
   background-color: #111;
   top: 0;
   right: 0;
   padding: rem(8) rem(20);
 }
+.main-works__image::before {
+  content: "";
+  display: block;
+  padding-top: calc(249 / 375 * 100%);
+  @include mq(md) {
+  padding-top: calc(349 / 525 * 100%);
+}
+}
+.main-works__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .main-works__title {
   font-size: rem(20);
-  color: $white;
+  color: $black;
   font-weight: $normal;
   line-height: calc(35 / 20);
   letter-spacing: 0.02em;

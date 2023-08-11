@@ -10,7 +10,7 @@
 .sub-content__main {
   margin-top: rem(85);
   text-align: center;
-  color: $white;
+  color: $black;
   @include mq(md) {
     margin-top: rem(69);
   }
@@ -50,7 +50,7 @@
 }
 .sub-content__contents {
   margin-top: rem(24);
-  color: $white;
+  color: $black;
   @include mq(md) {
         width: calc(50% - rem(15));
   }

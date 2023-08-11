@@ -3,7 +3,7 @@
 .sub-works__title {
   font-size: rem(20);
   font-weight: $normal;
-  color: $white;
+  color: $black;
   line-height: 1;
   margin-top: rem(53);
   @include mq(md) {
@@ -11,18 +11,19 @@
     margin-top: rem(91);
   }
 }
-.works__meta {
+.sub-works__meta {
   display: flex;
+  align-items: center;
   font-size: rem(16);
   font-weight: $regular;
-  color: $white;
+  color: $black;
   margin-top: rem(16);
   @include mq(md) {
     margin-top: rem(32);
   }
 }
-.works__category {
-  border: 1px solid $white;
+.sub-works__category {
+  border: 1px solid $black;
   padding: rem(7) rem(23);
   margin-left: rem(30);
 }
@@ -58,6 +59,56 @@
 .slider-thumbnail .swiper-slide.swiper-slide-thumb-active {
   opacity: 1;
 }
+// swiper内画像
+.sub-works__image-top {
+  position: relative;
+}
+.sub-works__image-top::before {
+  content: "";
+  display: block;
+  padding-top: calc(251 / 375 * 100%);
+  @include mq(md) {
+    padding-top: calc(427 / 799 * 100%);
+  }
+}
+.sub-works__image-top img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sub-works__image-top.swiper-slide {
+  height: 100%;
+}
+.sub-works__image-top.swiper-slide img {
+  height: 100%;
+}
+.sub-works__image-bottom {
+  position: relative;
+}
+.sub-works__image-bottom::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.sub-works__image-bottom img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sub-works__image-bottom.swiper-slide {
+  height: 100%;
+}
+.sub-works__image-bottom.swiper-slide img {
+  height: 100%;
+}
 /* レイアウトのためのスタイル */
 .swiper-slide img {
   height: auto;
@@ -71,11 +122,11 @@
   }
 }
 .sub-works__items {
-  color: $white;
+  color: $black;
   letter-spacing: 0.004em;
 }
 .sub-works__item {
-  border: 1px solid $white;
+  border: 1px solid $black;
   padding: rem(56) rem(10) rem(33);
   position: relative;
 }
@@ -89,10 +140,10 @@
   font-size: rem(20);
   font-weight: $regular;
   padding: rem(8) rem(24);
-  border: 1px solid $white;
+  border: 1px solid $black;
   border-radius: rem(32);
   letter-spacing: 0.004em;
-  background-color: #111;
+  background-color: #e2dfd9;
   display: inline-block;
   position: absolute;
   z-index: 1;
@@ -118,6 +169,8 @@
     margin-top: rem(104);
   }
 }
+
+
 .sub-works__wrapper {
   max-width: rem(600);
 }
@@ -149,11 +202,11 @@
 }
 /* 前への矢印カスタマイズ */
 .swiper-button-prev::after {
-  background-image: url(../images/common/swiper-button-prev.png);
+  background-image: url(../images/common/swiper-prev-bottom.png);
 }
 /* 次への矢印カスタマイズ */
 .swiper-button-next::after {
-  background-image: url(../images/common/swiper-button-next.png);
+  background-image: url(../images/common/swiper-next-bottom.png);
 }
 /* 画像サイズ調整 */
 .swiper-slide img {

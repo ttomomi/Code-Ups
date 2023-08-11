@@ -10,8 +10,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid $white;
-  color: $white;
+  border: 1px solid $black;
+  color: $black;
   transition: 0.3s;
   text-transform: uppercase;
 }
@@ -26,8 +26,8 @@
   height: rem(24);
 }
 .pagination__current a {
-  background-color: $white;
-  color: $black;
+  background-color: $black;
+  color: $white;
   pointer-events: none;
 }
 .pagination__prev a,
@@ -40,6 +40,6 @@
 }
 // ホバー
 .pagination a:hover {
-  background-color: $white;
-  color: $black;
+  background-color: $black;
+  color: $white;
 }

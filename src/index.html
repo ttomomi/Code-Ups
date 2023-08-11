@@ -20,24 +20,27 @@
     <!-- ファビコン -->
     <link rel="icon" href="" />
     <!-- css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- フォントファミリー -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
 
-      <header class="header top-header">
-        <div class="header__inner js-header">
+      <header class="header top-header js-header">
+        <div class="header__inner">
           <h1 class="header__logo logo">
             <a href="#" class="logo__link">
-              <img src="./assets/images/common/logo.png" alt="code upsのロゴ">
+              横浜珈琲
             </a>
           </h1>
           <button class="header__drawer hamburger js-hamburger">
@@ -49,7 +52,7 @@
             <ul class="pc-nav__items">
               <li class="pc-nav__item"><a href="#"><span>お知らせ</span></a></li>
               <li class="pc-nav__item"><a href="#"><span>事業内容</span></a></li>
-              <li class="pc-nav__item"><a href="#"><span>制作実績</span></a></li>
+              <li class="pc-nav__item"><a href="#"><span>取扱商品</span></a></li>
               <li class="pc-nav__item"><a href="#"><span>企業概要</span></a></li>
               <li class="pc-nav__item"><a href="#"><span>ブログ</span></a></li>
               <li class="pc-nav__item pc-nav__item--white"><a href="#">お問い合わせ</a></li>
@@ -61,7 +64,7 @@
                 <li class="sp-nav__item"><a href="#"><span>トップ</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>お知らせ</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>事業内容</span></a></li>
-                <li class="sp-nav__item"><a href="#"><span>制作実績</span></a></li>
+                <li class="sp-nav__item"><a href="#"><span>取扱商品</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>企業概要</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>ブログ</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>お問い合わせ</span></a></li>
@@ -74,20 +77,17 @@
 
     <main>
       <!-- メインビジュアル -->
-      <section class="mv top-mv">
+      <section class="mv top-mv js-mv">
         <div class="mv__inner">
           <div class="swiper js-mv-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="mv__swiper-img">
                   <picture>
-                    <source
-                      srcset="./assets/images/common/mv-pc1.jpg"
-                      media="(min-width: 768px)"
-                    />
+                    
                     <img
-                      src="./assets/images/common/mv-sp1.jpg"
-                      alt="メインビジュアル画像1"
+                      src="./assets/images/common/mv-image1.jpg"
+                      alt="3つのコーヒー"
                     />
                   </picture>
                 </div>
@@ -95,27 +95,19 @@
               <div class="swiper-slide">
                 <div class="mv__swiper-img">
                   <picture>
-                  <source
-                    srcset="./assets/images/common/mv-pc2.jpg"
-                    media="(min-width: 768px)"
-                  />
                   <img
-                    src="./assets/images/common/mv-sp2.jpg"
-                    alt="メインビジュアル画像2"
+                    src="./assets/images/common/mv-image2.jpg"
+                    alt="カフェの外観"
                   />
                 </picture>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="mv__swiper-img">
-                  <picture>
-                  <source
-                    srcset="./assets/images/common/mv-pc3.jpg"
-                    media="(min-width: 768px)"
-                  />
+                  
                   <img
-                    src="./assets/images/common/mv-sp3.jpg"
-                    alt="メインビジュアル画像3"
+                    src="./assets/images/common/mv-image3.jpg"
+                    alt="カフェの内観"
                   />
                 </picture>
                 </div>
@@ -123,8 +115,8 @@
             </div>
           </div>
           <div class="mv__header">
-            <h2 class="mv__title">メインタイトルが入ります</h2>
-            <p class="mv__subtitle">サブタイトルが入ります</p>
+            <h2 class="mv__title">あなたに寄り添う1杯を</h2>
+            <p class="mv__subtitle">a cup to be by your side</p>
           </div>
         </div>
       </section>
@@ -140,7 +132,7 @@
             </div>
             <div class="news-content__block">
               <a href="#" class="news-content__text">
-                記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。
+                美味しいコーヒーの淹れ方を教える教室始めました。
               </a>
             </div>
             <div class="news-content__btn">
@@ -162,14 +154,9 @@
         <div class="content__block content-block">
           <a href="" class="content-block__item">
             <div class="content-block__image">
-              <picture>
-                <source
-                  srcset="./assets/images/common/content-img1.jpg"
-                  media="(min-width: 768px)"
-                />
                 <img
-                  src="./assets/images/common/content-img-sp1.jpg"
-                  alt="経営理念ページへ"
+                  src="./assets/images/common/top-content-image1.jpg"
+                  alt="コーヒーと植物"
                 />
               </picture>
             </div>
@@ -178,13 +165,9 @@
           <a href="" class="content-block__item">
             <div class="content-block__image">
               <picture>
-                <source
-                  srcset="./assets/images/common/content-img2.jpg"
-                  media="(min-width: 768px)"
-                />
                 <img
-                  src="./assets/images/common/content-img-sp2.jpg"
-                  alt="理念1へ"
+                  src="./assets/images/common/top-content-image2.jpg"
+                  alt="綺麗なカフェアート"
                 />
               </picture>
             </div>
@@ -193,13 +176,9 @@
           <a href="" class="content-block__item">
             <div class="content-block__image">
               <picture>
-                <source
-                  srcset="./assets/images/common/content-img3.jpg"
-                  media="(min-width: 768px)"
-                />
                 <img
-                  src="./assets/images/common/content-img-sp3.jpg"
-                  alt="理念2へ"
+                  src="./assets/images/common/top-content-image3.jpg"
+                  alt="美味しいコーヒー豆"
                 />
               </picture>
             </div>
@@ -208,13 +187,9 @@
           <a href="" class="content-block__item">
             <div class="content-block__image">
               <picture>
-                <source
-                  srcset="./assets/images/common/content-img4.jpg"
-                  media="(min-width: 768px)"
-                />
                 <img
-                  src="./assets/images/common/content-img-sp4.jpg"
-                  alt="理念3へ"
+                  src="./assets/images/common/top-content-image4.jpg"
+                  alt="カフェの内観"
                 />
               </picture>
             </div>
@@ -230,7 +205,7 @@
       <section class="works top-works">
         <div class="works__inner inner">
           <div class="works__title section-title">
-              <h2 class="section-title__main">制作実績</h2>
+              <h2 class="section-title__main">取扱商品</h2>
             <span class="section-title__sub section-title__sub--right">Works</span>
           </div>
         </div>
@@ -242,13 +217,9 @@
                   <div class="swiper-slide">
                     <div class="works__img">
                       <picture>
-                        <source
-                          srcset="./assets/images/common/works-img-pc1.jpg"
-                          media="(min-width: 768px)"
-                        />
                         <img
-                          src="./assets/images/common/works-img-sp1.jpg"
-                          alt="制作実績1"
+                          src="./assets/images/common/top-works-image1.jpg"
+                          alt="恒常と男のひと"
                         />
                       </picture>
                     </div>
@@ -256,13 +227,9 @@
                   <div class="swiper-slide">
                     <div class="works__img">
                       <picture>
-                        <source
-                          srcset="./assets/images/common/works-img-pc2.jpg"
-                          media="(min-width: 768px)"
-                        />
                         <img
-                          src="./assets/images/common/works-img-sp2.jpg"
-                          alt="制作実績2"
+                          src="./assets/images/common/top-works-image2.jpg"
+                          alt="コーヒー豆"
                         />
                       </picture>
                     </div>
@@ -270,13 +237,9 @@
                   <div class="swiper-slide">
                     <div class="works__img">
                       <picture>
-                        <source
-                          srcset="./assets/images/common/works-img-pc3.jpg"
-                          media="(min-width: 768px)"
-                        />
                         <img
-                          src="./assets/images/common/works-img-sp3.jpg"
-                          alt="制作実績3"
+                          src="./assets/images/common/top-works-image3.jpg"
+                          alt="工場でコーヒー豆を焙煎"
                         />
                       </picture>
                     </div>
@@ -287,10 +250,10 @@
             </div>
             <div class="works__content works-content">
               <h3 class="works-content__title">
-                メインタイトルが入ります。
+                私たちの熱い想い
               </h3>
               <p class="works-content__text">
-                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                私たちは、世界中から最上の豆を選び、それぞれが厳格な品質基準を満たすことを保証します。豆が選ばれた瞬間から、独自の風味と香りを引き出す緻密な焙煎プロセスを経ています。
               </p>
               <div class="works-content__btn">
                 <a href="#" class="button">詳しく見る</a>
@@ -315,22 +278,18 @@
             <div class="overview__contents inner">
               <div class="overview__contents-img">
                 <picture>
-                  <source
-                    srcset="./assets/images/common/overview-img-pc.jpg"
-                    media="(min-width: 768px)"
-                  />
                   <img
-                    src="./assets/images/common/overview-img-sp.jpg"
-                    alt="企業概要"
+                    src="./assets/images/common/top-overview-image1.jpg"
+                    alt="コーヒーを持って談笑"
                   />
                 </picture>
               </div>
               <div class="overview__content overview-content">
                 <h3 class="overview-content__title">
-                  メインタイトルが入ります。
+                  コーヒーを通じて繋がりを築く
                 </h3>
                 <p class="overview-content__text">
-                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                  私たちはコーヒーを、単なる飲み物以上のものとして捉えています。それは会話や交流のきっかけであり、新しい友人や仲間との素晴らしい出会いを可能にします。
                 </p>
                 <div class="overview-content__btn">
                   <a href="overview.html" class="button">詳しく見る</a>
@@ -355,27 +314,23 @@
               <a href="#" class="card__list">
                 <figure class="card__img">
                   <picture>
-                    <source
-                          srcset="./assets/images/common/blog-card1-pc.jpg"
-                          media="(min-width: 768px)"
-                        />
                         <img
-                          src="./assets/images/common/blog-card1.jpg"
+                          src="./assets/images/common/top-blog-card1.jpg"
                           alt="ブログカード1"
                         />
                   </picture>
                 </figure>
                 <div class="card__body">
                   <h3 class="card__title">
-                    タイトルが入ります。タイトルが入ります。
+                    コーヒー教室の開催。
                   </h3>
                   <p class="card__text">
-                    説明文が入ります。説明文が入ります。説明文が入ります。
+                    50人もの方が集まり、みんなで和気藹々と行われたコーヒーの淹れ方教室。
                   </p>
                 </div>
                 <div class="card__info">
                   <div class="card__category">
-                    カテゴリ
+                    イベント
                   </div>
                   <time class="card__date" datetime="2021-07-20">
                     2021.07.20
@@ -387,27 +342,23 @@
               <a href="#" class="card__list">
                 <figure class="card__img">
                   <picture>
-                    <source
-                          srcset="./assets/images/common/blog-card2-pc.jpg"
-                          media="(min-width: 768px)"
-                        />
                         <img
-                          src="./assets/images/common/blog-card2.jpg"
+                          src="./assets/images/common/top-blog-card2.jpg"
                           alt="ブログカード2"
                         />
                   </picture>
                 </figure>
                 <div class="card__body">
                   <h3 class="card__title">
-                    タイトルが入ります。タイトルが入ります。
+                    美味しいコーヒー豆入りました。
                   </h3>
                   <p class="card__text">
-                    説明文が入ります。説明文が入ります。説明文が入ります。
+                    美味しいコーヒー豆がブラジルから来たのでぜひお越しください。
                   </p>
                 </div>
                 <div class="card__info">
                   <div class="card__category">
-                    カテゴリ
+                    コーヒー豆
                   </div>
                   <time class="card__date" datetime="2021-07-20">
                     2021.07.20
@@ -419,27 +370,23 @@
               <a href="#" class="card__list">
                 <figure class="card__img">
                   <picture>
-                    <source
-                          srcset="./assets/images/common/blog-card3-pc.jpg"
-                          media="(min-width: 768px)"
-                        />
                         <img
-                          src="./assets/images/common/blog-card3.jpg"
+                          src="./assets/images/common/top-blog-card3.jpg"
                           alt="ブログカード3"
                         />
                   </picture>
                 </figure>
                 <div class="card__body">
                   <h3 class="card__title card__hover">
-                    タイトルが入ります。タイトルが入ります。
+                    夜のコーヒーイベント。
                   </h3>
                   <p class="card__text card__hover">
-                    説明文が入ります。説明文が入ります。説明文が入ります。
+                    週に1回の深夜から始まるコーヒーイベント。コーヒーを使ったお酒用意してます。
                   </p>
                 </div>
                 <div class="card__info">
                   <div class="card__category">
-                    カテゴリ
+                    イベント
                   </div>
                   <time class="card__date card__hover" datetime="2021-07-20">
                     2021.07.20
@@ -464,7 +411,7 @@
           </div>
           <div class="contact__text">
             <p>
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              お問い合わせは下記のリンクへ
             </p>
           </div>
           <div class="contact__btn">
@@ -479,13 +426,13 @@
       <div class="footer__inner">
         <nav class="footer__nav footer-nav">
           <div class="footer-nav__logo">
-            <img src="./assets/images/common/logo.png" alt="code upsのロゴ">
+            <a href="#">横浜珈琲</a>
           </div>
           <ul class="footer-nav__items">
             <li class="footer-nav__item"><a href=""><span>トップ</span></a></li>
             <li class="footer-nav__item"><a href=""><span>お知らせ</span></a></li>
             <li class="footer-nav__item"><a href=""><span>事業内容</span></a></li>
-            <li class="footer-nav__item"><a href=""><span>制作実績</span></a></li>
+            <li class="footer-nav__item"><a href=""><span>取扱商品</span></a></li>
             <li class="footer-nav__item"><a href=""><span>企業概要</span></a></li>
             <li class="footer-nav__item"><a href=""><span>ブログ</span></a></li>
             <li class="footer-nav__item"><a href=""><span>お問い合わせ</span></a></li>

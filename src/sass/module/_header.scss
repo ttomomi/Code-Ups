@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(17, 17, 17, 0.5);
+  background-color: rgba(154, 113, 1, 0.502);
   height: rem(50);
   position: fixed;
   z-index: 10000;
@@ -24,8 +24,8 @@
   }
 }
 /* スクロールしたらヘッダーメニューの背景色ー変更 */
-.header__inner.headerColorScroll {
-  background-color: #111;
+.header.headerColorScroll {
+  background-color: #9a7108fa;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -34,8 +34,4 @@
 .pc-nav__item--white.headerColorScroll {
   background-color: $black;
   transition: 0.4s ease-out;
-}
-// 背景色をつける
-.header__inner.is-open {
-  background-color: #111;
 }

@@ -20,7 +20,7 @@
     <!-- ファビコン -->
     <link rel="icon" href="" />
     <!-- css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- フォントファミリー -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -37,7 +37,7 @@
         <div class="header__inner js-header">
           <div class="header__logo logo">
             <a href="#" class="logo__link">
-              <img src="./assets/images/common/logo.png" alt="code upsのロゴ">
+              横浜珈琲
             </a>
           </div>
           <button class="header__drawer hamburger js-hamburger">
@@ -49,7 +49,7 @@
             <ul class="pc-nav__items">
               <li class="pc-nav__item"><a href="#"><span>お知らせ</span></a></li>
               <li class="pc-nav__item"><a href="#"><span>事業内容</span></a></li>
-              <li class="pc-nav__item"><a href="#"><span>制作実績</span></a></li>
+              <li class="pc-nav__item"><a href="#"><span>取扱商品</span></a></li>
               <li class="pc-nav__item"><a href="#"><span>企業概要</span></a></li>
               <li class="pc-nav__item"><a href="#"><span>ブログ</span></a></li>
               <li class="pc-nav__item pc-nav__item--white"><a href="#">お問い合わせ</a></li>
@@ -61,7 +61,7 @@
                 <li class="sp-nav__item"><a href="#"><span>トップ</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>お知らせ</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>事業内容</span></a></li>
-                <li class="sp-nav__item"><a href="#"><span>制作実績</span></a></li>
+                <li class="sp-nav__item"><a href="#"><span>取扱商品</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>企業概要</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>ブログ</span></a></li>
                 <li class="sp-nav__item"><a href="#"><span>お問い合わせ</span></a></li>
@@ -74,7 +74,7 @@
 
     <main>
       <!-- メインビジュアル -->
-      <div class="sub-mv">
+      <div class="sub-mv js-mv">
         <div class="sub-mv__img">
           <img src="./assets/images/common/content-mv.jpg" alt="光っている電球を持つ手">
         </div>
@@ -97,11 +97,11 @@
         </div>
         <div class="sub-contact__wrapper inner">
           <form action="" method="post" id="" class="sub-contact__form form js-form">
+            <span class="form__error"></span>
             <dl class="form__item">
               <dt>※会社名</dt>
               <dd>
-                <input type="text" name="company" value="" placeholder="テキストがはいります" class="form__company" required />
-                <p class="form__error" style="color: red;"></p>
+                <input type="text" name="company" value="" placeholder="テキストがはいります" class="form__company js-text" required />
               </dd>
             </dl>
             <dl class="form__item">
@@ -129,7 +129,7 @@
               </dd>
             </dl>
             <div class="form__btn">
-              <input type="submit" class="form__btn js-btn" value="送信" disabled/>
+              <input type="submit" class="form__btn js-btn" value="送信"/>
             </div>
           </form>
       </div>
@@ -146,7 +146,7 @@
           </div>
           <div class="contact__text">
             <p>
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              お問い合わせは下記のリンクへ
             </p>
           </div>
           <div class="contact__btn">
@@ -162,13 +162,13 @@
       <div class="footer__inner">
         <nav class="footer__nav footer-nav">
           <div class="footer-nav__logo">
-            <img src="./assets/images/common/logo.png" alt="code upsのロゴ">
+            横浜珈琲
           </div>
           <ul class="footer-nav__items">
             <li class="footer-nav__item"><a href=""><span>トップ</span></a></li>
             <li class="footer-nav__item"><a href=""><span>お知らせ</span></a></li>
             <li class="footer-nav__item"><a href=""><span>事業内容</span></a></li>
-            <li class="footer-nav__item"><a href=""><span>制作実績</span></a></li>
+            <li class="footer-nav__item"><a href=""><span>取扱商品</span></a></li>
             <li class="footer-nav__item"><a href=""><span>企業概要</span></a></li>
             <li class="footer-nav__item"><a href=""><span>ブログ</span></a></li>
             <li class="footer-nav__item"><a href=""><span>お問い合わせ</span></a></li>

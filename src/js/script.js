@@ -30,7 +30,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // スクロールすると背景色変更
   $(window).on("scroll", function () {
-    const sliderHeight = $(".mv").height();
+    const sliderHeight = $(".js-mv").height();
     if (sliderHeight  < $(this).scrollTop()) {
       $(".js-header").addClass("headerColorScroll");
     } else {
@@ -91,7 +91,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         },
   });
 
-// 制作実績詳細
+// 取扱商品詳細
   // サムネイル
 const sliderThumbnail = new Swiper(".slider-thumbnail", {
   slidesPerView: "auto",
@@ -120,19 +120,3 @@ const slider = new Swiper(".slider", {
     swiper: sliderThumbnail,
   },
 });
-
-// お問い合わせボタン
-const form = document.getElementsByClassName("js-form");
-const button =  document.getElementsByClassName("js-btn");
-form.addEventListener("input",update);
-function update() {
-  const isRequired = form.checkValidity();
-}
-function update() {
-  const isRequired = form.checkValidity();
-
-  if (isRequired) {
-    button.disabled = false;
-    return;
-  }
-}

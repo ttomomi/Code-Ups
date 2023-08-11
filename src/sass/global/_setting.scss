@@ -15,10 +15,11 @@ $padding-sp: 20px;
 
 $base-font-family: 'Noto Sans JP', sans-serif;
 $second-font-family: 'Noto Serif JP', serif;
+$eb-font-family: 'EB Garamond', serif;;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
-  font-family: $base-font-family;
+  font-family: $second-font-family;
 }
 
 // フォントウェイト
@@ -33,9 +34,9 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #333;
 $white: #fff;
-$yellow: #F9F871;
+$yellow: #796d043b;
 
 // 背景色の指定
 body {
-  background-color: #111;
+  background-color: #e2dfd9;
 }

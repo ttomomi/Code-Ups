@@ -3,10 +3,9 @@
 .related-article__title {
   font-size: rem(16);
   font-weight: $regular;
-  color: $white;
+  color: $black;
   letter-spacing: 0.02em;
-  background-color: #333;
-  border: 1px solid $white;
+  background-color: $yellow;
   text-align: center;
   padding: rem(9);
 }
@@ -40,9 +39,4 @@
   display: block;
   padding-top: calc(148 / 251 * 100%);
 }
-}
-// ホバー
-.related-article__card:hover .card__title {
-  color: $white;
-  transition: all 0.3s ease 0s;
 }
