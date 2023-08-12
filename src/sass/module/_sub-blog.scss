@@ -101,7 +101,7 @@
   letter-spacing: 0.02em;
   display: inline-block;
   position: relative;
-  border-bottom: 3px solid $black;
+  border-bottom: 3px solid $white;
 }
 .sub-blog__title3::after {
   content: "";
@@ -110,7 +110,7 @@
   bottom: rem(-3);
   width: rem(73);
   height: inherit;
-  border-bottom: 3px solid $yellow;
+  border-bottom: 3px solid yellow;
 }
 .sub-blog__list,
 .sub-blog__order {
@@ -121,6 +121,17 @@
   @include mq(md) {
     margin-top: rem(32);
   }
+}
+.sub-blog__list li {
+  list-style: inside;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.sub-blog__order li {
+  list-style-type: auto;
+  list-style-position: inside;
+  padding-left: 1em;
+  text-indent: -1em;
 }
 .sub-blog__link {
   margin-top: rem(80);

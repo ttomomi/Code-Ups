@@ -132,7 +132,7 @@ overflow: hidden;
   transition: all 0.3s ease 0s;
 }
 .card:hover .card__title,
-.cards:hover .card__text,
+.card:hover .card__text,
 .card:hover .card__date {
   color: $white;
   transition: all 0.3s ease 0s;
@@ -156,4 +156,7 @@ overflow: hidden;
   text-align: center;
   top: rem(-17);
   left: rem(-16);
+}
+.main-blog__items .card:first-child::before {
+  display: none;
 }

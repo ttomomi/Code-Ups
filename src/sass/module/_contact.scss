@@ -4,6 +4,7 @@
   padding-top: rem(67);
   padding-bottom: rem(64);
   background-color: $black;
+  text-align: center;
   @include mq(md) {
     padding-top: rem(148);
     padding-bottom: rem(149);
@@ -21,11 +22,11 @@
   text-align: left;
   display: inline-block;
   margin-top: rem(19);
+  text-align: center;
   @include mq(md) {
     margin-top: rem(23);
     text-indent: 0.13em;
     width: 100%;
-    text-align: center;
   }
 }
 .contact__btn {

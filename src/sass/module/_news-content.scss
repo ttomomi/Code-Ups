@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .news-content {
+  text-align: justify;
   @include mq(md) {
     display: flex;
     align-items: baseline;

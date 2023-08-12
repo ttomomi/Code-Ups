@@ -42,7 +42,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   const pageTop = $(".page-top");
   pageTop.hide();
   $(window).on("scroll", function () {
-    const sliderHeight = $(".mv").height();
+    const sliderHeight = $(".js-mv").height();
     if (sliderHeight - 30 < $(this).scrollTop()) { 
       pageTop.fadeIn(); 
     } else {
